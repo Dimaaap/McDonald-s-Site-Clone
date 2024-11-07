@@ -5,7 +5,7 @@ export const UploadAppBtn = ({ serviceTitle, serviceIcon, serviceLink }) => {
   return (
     <Link className="text-white font-semibold 
     flex flex-row gap-1 items-center bg-black rounded-md 
-    max-w-[25%] px-3 py-1" 
+    max-w-[30%] px-3 py-1" 
     href={serviceLink}>
       { serviceIcon }
 

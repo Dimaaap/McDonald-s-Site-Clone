@@ -1,6 +1,7 @@
 "use client"
 
-import { Advertisment, Banner, FAQSection, PromoSection } from "@/components";
+import { Advertisment, Banner, FAQSection, 
+  PromoSection, MainFooter } from "@/components";
 import "./globals.css";
 import { useBannerHandler, banners } from "@/store";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <PromoSection />
       <Advertisment />
       <FAQSection />
+      <MainFooter />
     </div>
   );
 }

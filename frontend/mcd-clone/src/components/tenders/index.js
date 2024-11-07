@@ -1,0 +1,1 @@
+export { TendersMainSection } from "./TendersMainSection";

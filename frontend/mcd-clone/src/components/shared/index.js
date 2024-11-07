@@ -7,3 +7,5 @@ export { SliderHandler } from "./SliderHandler";
 export { BannerNotice } from "./BannerNotice";
 export { UploadAppBtn } from "./UploadAppBtn";
 export { MoreDetailsBtn } from "./MoreDetailsBtn";
+export { FAQCart } from "./FAQCart";
+export { LiLink } from "./LiLink";
