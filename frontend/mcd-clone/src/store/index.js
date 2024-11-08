@@ -4,5 +4,6 @@ export { BannerRoutes, AdvertismentRoute,
     ToKnowStore, FAQStore, ImpactStrategyRoute, 
     QualityAndHygieneRoute, VacanciesRouter } from "./LinksStore";
 export { menuItems } from './menuItems';
-export { useBannerHandler } from './useBannerHanlder';
-export { banners } from './banners'
+export { useBannerHandler, 
+    useFoundationBannerHandler } from './useBannerHanlder';
+export { banners, foundationBanners } from './banners'

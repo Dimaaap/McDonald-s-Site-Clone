@@ -63,3 +63,41 @@ export const banners = [
       noticeHref: BannerRoutes.MOBILE_APP
     }
   ]
+
+export const foundationBanners = [
+  {
+    number: 1,
+    bgImage: "https://s7d1.scene7.com/is/image/mcdonalds/RMHC_slider_Kiev:accessible-carousel-desktop?resmode=sharp2",
+    noticeText: `Кімнату відкрито у Національній дитячій 
+    спеціалізованій лікарні «ОХМАТДИТ» у Києві`,
+    noticeTitle: "Сімейна кімната у Києві"
+  },
+  {
+    number: 2,
+    bgImage: "https://s7d1.scene7.com/is/image/mcdonalds/RMHC_slider_Lviv:accessible-carousel-desktop?resmode=sharp2",
+    noticeTitle: "Сімейна кімната у Львові",
+    noticeText: `сімейну кімнату відкрито у Львівській 
+    обласній дитячій клінічній лікарні «Охматдит»`
+  },
+  {
+    number: 3,
+    bgImage: "https://s7d1.scene7.com/is/image/mcdonalds/RMHC_slider_Vinnytsya:accessible-carousel-desktop?resmode=sharp2",
+    noticeTitle: "Сімейна кімната у Вінниці",
+    noticeText: `Сімейну кімнату відкрито у Вінницькій обласній 
+    дитячій клінічній лікарні`
+  },
+  {
+    number: 4,
+    bgImage: "https://s7d1.scene7.com/is/image/mcdonalds/RMHC_slider_Sumy:accessible-carousel-desktop?resmode=sharp2",
+    noticeTitle: "Сімейна кімната у Сумах",
+    noticeText: `Сімейну кімнату відкрито у Сумській 
+    обласній дитячій клінічній лікарні`
+  },
+  {
+    number: 5,
+    bgImage: "https://s7d1.scene7.com/is/image/mcdonalds/RMHC_slider_Rivne_2336x1040:accessible-carousel-desktop?resmode=sharp2",
+    noticeTitle: "Сімейна кімната у Рівному",
+    noticeText: `Сімейну кімнату відкрито у Рівненській обласній 
+    дитячій клінічній лікарні`
+  }
+]

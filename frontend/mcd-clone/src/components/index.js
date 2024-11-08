@@ -9,3 +9,7 @@ export * from './feedback';
 export * from './tenders';
 export * from './privacy-policy';
 export * from './terms-and-conditions';
+export * from './impact-strategy';
+export * from './rmhs';
+export * from './save_planet';
+export * from './quality_and_hygiene';

@@ -9,3 +9,7 @@ export { UploadAppBtn } from "./UploadAppBtn";
 export { MoreDetailsBtn } from "./MoreDetailsBtn";
 export { FAQCart } from "./FAQCart";
 export { LiLink } from "./LiLink";
+export { InfoCard } from "./InfoCard";
+export { FoundationBanner } from "./FoundationBanner";
+export { FoundationBannerNotice } from './FoundationBannerNotice';
+export { FoundationSliderHandler } from './FoundationSliderHandler'

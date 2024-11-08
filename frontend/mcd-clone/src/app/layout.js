@@ -1,10 +1,10 @@
 import { MainHeader } from "@/components";
-import { Roboto } from "next/font/google"
+import { Nunito } from "next/font/google"
 
 
-const roboto = Roboto({
+const nunito = Nunito({
   subsets: ["cyillic"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "700", "800", "900"],
   style: ["normal", "italic"]
 })
 
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={ roboto.className }
+        className={ nunito.className }
       >
         <MainHeader />
         {children}
