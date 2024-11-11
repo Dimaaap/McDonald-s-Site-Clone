@@ -6,4 +6,6 @@ export { BannerRoutes, AdvertismentRoute,
 export { menuItems } from './menuItems';
 export { useBannerHandler, 
     useFoundationBannerHandler } from './useBannerHanlder';
-export { banners, foundationBanners } from './banners'
+export { banners, foundationBanners } from './banners';
+export { faqElements } from "./faqElements";
+export { useFAQHandler } from "./useFAQHandler";

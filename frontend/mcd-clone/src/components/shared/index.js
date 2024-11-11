@@ -12,4 +12,10 @@ export { LiLink } from "./LiLink";
 export { InfoCard } from "./InfoCard";
 export { FoundationBanner } from "./FoundationBanner";
 export { FoundationBannerNotice } from './FoundationBannerNotice';
-export { FoundationSliderHandler } from './FoundationSliderHandler'
+export { FoundationSliderHandler } from './FoundationSliderHandler';
+export { WorkHeader } from "./WorkHeader";
+export { CredoItem } from "./CredoItem";
+export { FAQHeader } from "./FAQHeader";
+export { QuestionHeader } from "./QuestionHeader";
+export { AnswerText } from "./AnswerText";
+export { AnswerQuestion } from "./AnswerQuestion";

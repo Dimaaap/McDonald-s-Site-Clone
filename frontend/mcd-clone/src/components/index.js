@@ -13,3 +13,4 @@ export * from './impact-strategy';
 export * from './rmhs';
 export * from './save_planet';
 export * from './quality_and_hygiene';
+export * from './work-adventages';

@@ -49,7 +49,8 @@ export const ToKnowStore = {
 }
 
 export const FAQStore = {
-    FAQ: "/faq",
+    FAQ: "/work-in-mcd/faq",
+    ADVENTAGES: "/work-in-mcd/adventages",
 }
 
 export const ImpactStrategyRoute = {

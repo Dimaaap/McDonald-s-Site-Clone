@@ -2,7 +2,7 @@
 
 import { Advertisment, Banner, FAQSection, 
   PromoSection, MainFooter } from "@/components";
-import "./globals.css";
+import "../globals.css";
 import { useBannerHandler, banners } from "@/store";
 
 export default function Home() {
