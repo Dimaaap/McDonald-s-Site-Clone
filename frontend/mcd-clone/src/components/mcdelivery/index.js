@@ -1,0 +1,1 @@
+export { McDeliveryMainSection } from "./McDeliveryMainSection";

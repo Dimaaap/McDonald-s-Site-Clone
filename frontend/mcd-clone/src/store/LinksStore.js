@@ -45,12 +45,13 @@ export const ToKnowStore = {
     FIND_US: BannerRoutes.RESTAURANTS,
     TENDERS: "/to_know/tenders",
     WORK: "/to_know/mcd-career",
-    WORK_CALC: "/to_know/salary-calc"
+    WORK_CALC: "/work-in-mcd/salary-calc"
 }
 
 export const FAQStore = {
     FAQ: "/work-in-mcd/faq",
     ADVENTAGES: "/work-in-mcd/adventages",
+    WHY_MCD: "/work-in-mcd/why-mcd"
 }
 
 export const ImpactStrategyRoute = {

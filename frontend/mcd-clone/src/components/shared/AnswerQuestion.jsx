@@ -1,29 +1,12 @@
 import React from 'react'
+import { QuestionHeader, AnswerText } from '.'
 
-export const AnswerQuestion = () => {
+export const AnswerQuestion = ({ headerText, isEven, 
+    textContainer, onClick, isShow=false, isTextShow=false}) => {
   return (
-    <div>
-        <QuestionHeader text="Як влаштуватись на роботу 
-            в Макдональдз?" isEven={ true } />
-        <AnswerText text={
-            <>
-                <p className="text-xl">
-                    Для цього Вам необхідно заповнити анкету 
-                    для працевлаштування. Ви можете подати 
-                    її двома способами: заповнити онлайн-анкету
-                    на {" "}
-                    <Link href="#" className="text-blue-500">
-                        нашому сайті
-                    </Link> {" "}
-                    або заповнити паперову анкету безпосередньо у закладі, 
-                    який Вас цікавить, і віддати її менеджеру закладу.
-                </p>
-                <p className="text-xl">
-                    Після заповнення анкету розглянуть менеджери 
-                    закладу.
-                </p>
-            </>
-        } />
+    <div onClick={onClick}>
+        <QuestionHeader text={ headerText } isEven={ isEven } isTextShow={isTextShow} />
+        <AnswerText text={ textContainer } isShow={ isShow } />
     </div>
   )
 }

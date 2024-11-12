@@ -1,4 +1,4 @@
-import { WorkHeader } from "@/components";
+import { WorkFooter, WorkHeader } from "@/components";
 import { Nunito } from "next/font/google"
 import "../globals.css"
 
@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
       >
         <WorkHeader />
         {children}
+        <WorkFooter />
       </body>
     </html>
   );

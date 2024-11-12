@@ -9,3 +9,4 @@ export { useBannerHandler,
 export { banners, foundationBanners } from './banners';
 export { faqElements } from "./faqElements";
 export { useFAQHandler } from "./useFAQHandler";
+export { useDeliveryService } from "./useDeliveryService";

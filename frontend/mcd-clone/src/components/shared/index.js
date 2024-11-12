@@ -19,3 +19,6 @@ export { FAQHeader } from "./FAQHeader";
 export { QuestionHeader } from "./QuestionHeader";
 export { AnswerText } from "./AnswerText";
 export { AnswerQuestion } from "./AnswerQuestion";
+export { WorkFooter } from "./WorkFooter";
+export { FillAnket } from "./FillAnket";
+export { SelectCurierBtn } from "./SelectCurierBtn";
