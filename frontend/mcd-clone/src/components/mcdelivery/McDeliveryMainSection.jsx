@@ -107,9 +107,9 @@ export const McDeliveryMainSection = () => {
           Завантажуй застосунок
         </h1>
         <div className="w-full h-[90vh] mb-10 mt-5
-        flex flex-row gap-[10%] p-[9%]
+        flex flex-row py-[9%] px-[5%]
         bg-[url('https://ukraine.mcdonalds.ua/macdonalds/macDelivery/img/Delivery_footer_background.jpg')]">
-          <div className='flex flex-col gap-5'>
+          <div className='flex flex-col gap-5 ml-[5%]'>
             <Image src="/Glovo-banner.svg" alt="glovo banner" 
             width={200} height={200}/>
             <div className="flex flex-row gap-3 -ml-12 mt-3">
@@ -126,15 +126,17 @@ export const McDeliveryMainSection = () => {
               Замовляй на сайті
             </Link>
           </div>
-          <div className="flex flex-col gap-5 w-1/2">
+          <div className="flex flex-col">
             <Image src="/BoltFood-hor-white.svg" alt="bolt logo" 
-            width={200} height={200} className="mt-8" />
-            <div className="flex flex-row gap-3 ml-10 mt-3">
+            width={200} height={200} className="mt-8 ml-[40%]" />
+            <div className="flex flex-row gap-3 ml-[30%] mt-3">
               <UploadAppBtn serviceTitle="AppStore" 
               serviceIcon={<FaApple size={25} />}
+              bigWidth={ true }
               serviceLink="https://apps.apple.com/ua/app/bolt-food/id1451492388?l=uk" />
               <UploadAppBtn serviceTitle="GooglePlay"
               serviceIcon={<FaGooglePlay size={25} />} 
+              bigWidth={ true }
               serviceLink="https://play.google.com/store/apps/details?id=com.bolt.deliveryclient"/>
             </div>
           </div>

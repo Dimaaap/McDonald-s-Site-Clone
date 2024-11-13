@@ -169,11 +169,11 @@ export const faqElements = [
             Якщо Ви можете працювати лише у певний проміжок часу, вкажіть, 
             будь ласка, Ваші часові можливості під час заповнення анкети. 
             Для цього необхідно вибрати в анкеті такі колонки:
-            <Image src="/time2.jpg" alt="time" width={150} height={150}
+            <Image src="/time2.jpg" alt="time" width={400} height={400}
             className="mt-5" />
             Необхідно обрати на кожний день той проміжок часу, в який 
             Ви можете працювати.
-            <Image src="/time3.jpg" alt="time" width={300} height={300} 
+            <Image src="/time3.jpg" alt="time" width={400} height={400} 
             className="mt-5" />
         </p>
     },
@@ -263,7 +263,7 @@ export const faqElements = [
         isEven: false,
         section: 4,
         id: 21,
-        innertText: <p className="text-xl">
+        innerText: <p className="text-xl">
             Так, надбавка за роботу в нічний час у нашій компанії
             становить 30% до тарифу.
         </p>

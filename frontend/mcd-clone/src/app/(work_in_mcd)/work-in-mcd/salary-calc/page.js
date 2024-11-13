@@ -1,7 +1,7 @@
-import Image from "next/image";
+import { SalaryCalcMain } from "@/components";
 
 export default function SalaryCalc() {
     return(
-        <div>asdadsa</div>
+       <SalaryCalcMain />
     )
 }

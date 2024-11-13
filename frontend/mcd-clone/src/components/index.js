@@ -15,3 +15,6 @@ export * from './save_planet';
 export * from './quality_and_hygiene';
 export * from './work-adventages';
 export * from './mcdelivery';
+export * from './gmal';
+export * from './salary-calc';
+export * from './vacancies';

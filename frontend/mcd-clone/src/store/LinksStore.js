@@ -69,5 +69,6 @@ export const QualityAndHygieneRoute = {
 
 export const VacanciesRouter = {
     RESTAURANT_VACANCY: "/vacancy/restaurant",
-    OFFICE_VACANCY: "/vacancy/office"
+    OFFICE_VACANCY: "/vacancy/office",
+    VACANCIES: "/vacancies"
 }

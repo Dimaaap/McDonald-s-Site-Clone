@@ -1,0 +1,1 @@
+export { SalaryCalcMain } from "./SalaryCalcMain";
