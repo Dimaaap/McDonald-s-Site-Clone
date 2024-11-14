@@ -30,6 +30,10 @@ export const MainFooter = () => {
                 className="hover:underline">
                     Тендери
                 </Link>
+                <Link href={ ToKnowStore.PRESS_ROOM } 
+                className="hover:underline">
+                    Прескімната "МакДональдз"
+                </Link>
             </div>
             <div className="flex flex-col gap-2 w-1/5">
                 <h1 className="font-extrabold">

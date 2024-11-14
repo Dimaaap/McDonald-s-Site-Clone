@@ -18,3 +18,5 @@ export * from './mcdelivery';
 export * from './gmal';
 export * from './salary-calc';
 export * from './vacancies';
+export * from './eat';
+export * from './newsroom';

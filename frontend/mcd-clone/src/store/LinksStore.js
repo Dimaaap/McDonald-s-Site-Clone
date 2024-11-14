@@ -45,7 +45,8 @@ export const ToKnowStore = {
     FIND_US: BannerRoutes.RESTAURANTS,
     TENDERS: "/to_know/tenders",
     WORK: "/to_know/mcd-career",
-    WORK_CALC: "/work-in-mcd/salary-calc"
+    WORK_CALC: "/work-in-mcd/salary-calc", 
+    PRESS_ROOM: "/newsroom",
 }
 
 export const FAQStore = {
@@ -71,4 +72,10 @@ export const VacanciesRouter = {
     RESTAURANT_VACANCY: "/vacancy/restaurant",
     OFFICE_VACANCY: "/vacancy/office",
     VACANCIES: "/vacancies"
+}
+
+export const NewsRoomRouter = {
+    NEWS: "/newsroom/news",
+    VISUAL_MATERIALS: "/newsroom/media-assets",
+    PRESS_CONTACTS: "/newsroom/press-contacts"
 }
