@@ -159,6 +159,7 @@ class Product(models.Model):
     title = models.CharField(max_length=155, default="")
     image = models.URLField(max_length=255, default="")
     weight = models.IntegerField(default=0)
+    volume = models.IntegerField(default=0)
     calories = models.IntegerField(default=0)
     description = models.TextField(default="")
     fats = models.IntegerField(default=0)
