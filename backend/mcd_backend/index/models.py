@@ -1,6 +1,7 @@
 from uuid import uuid4
 
 from django.db import models
+from django.template.defaultfilters import slugify
 
 class Region(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
@@ -10,12 +11,15 @@ class Region(models.Model):
     def __str__(self):
         return self.title
 
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        self.slug = slugify(self.title)
 
 class City(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     title = models.CharField(max_length=155, default="")
     slug = models.SlugField(max_length=155, default="")
-    region = models.ForeignKey(Region, on_delete=models.CASCADE)
+    region = models.ForeignKey(Region, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.title
@@ -24,7 +28,7 @@ class CityArea(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     title = models.CharField(max_length=155, default="")
     slug = models.SlugField(max_length=155, default="")
-    city = models.ForeignKey(City, on_delete=models.CASCADE)
+    city = models.ForeignKey(City, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return f"{self.title} район"
