@@ -1,0 +1,1 @@
+export { MenuCategoriesModal } from "./MenuCategoriesModal";

@@ -1,11 +1,25 @@
-import { ChevronDown } from 'lucide-react'
+"use client"
+
+import { ChevronDown, ChevronUp } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { MenuItem } from '.'
 import { menuItems } from '@/store'
+import { MenuCategoriesModal } from '../modals'
 
 export const BottomHeader = () => {
+
+  const [ modalOpen, setModalOpen ] = useState(false)
+
+  const handleModalShow = () => {
+    if(modalOpen){
+      setModalOpen(false)
+    } else {
+      setModalOpen(true)
+    }
+  }
+
   return (
     <div className="flex flex-row gap-16 items-center">
       <Link href="/">
@@ -14,9 +28,11 @@ export const BottomHeader = () => {
         />
       </Link>
       <div className="flex flex-row gap-7 text-[1.1rem] mt-7">
-        <div className="flex flex-row gap-1 items-center cursor-pointer">
+        <div className="flex flex-row gap-1 items-center cursor-pointer relative"
+        onClick={ handleModalShow }>
             <span>Меню</span>
-            <ChevronDown size={20} />
+            { modalOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} /> }
+            { modalOpen && <MenuCategoriesModal /> }
         </div>
         {
           menuItems.map((item) => (

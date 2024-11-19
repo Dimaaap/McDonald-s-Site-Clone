@@ -22,3 +22,4 @@ export { AnswerQuestion } from "./AnswerQuestion";
 export { WorkFooter } from "./WorkFooter";
 export { FillAnket } from "./FillAnket";
 export { SelectCurierBtn } from "./SelectCurierBtn";
+export { CategoriesSidebar } from "./CategoriesSidebar";
