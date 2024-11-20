@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const ONE_HOUR = 3600 * 1000;
 
-export const CategoriesSidebar = () => {
+export const CategoriesSidebar = ({ activeCategory="" }) => {
 
     const [menuCategories, setMenuCategories] = useState([])
     
@@ -26,7 +26,7 @@ export const CategoriesSidebar = () => {
                     }
                 }
 
-                const categories = await getMenuCategories() 
+                const categories = await getMenuCategories()
                 setMenuCategories(categories)
 
                 localStorage.setItem("menuCategories", JSON.stringify(categories));
@@ -44,18 +44,21 @@ export const CategoriesSidebar = () => {
             href="/eat/fullmenu/">
                 <Image src="https://s7d1.scene7.com/is/image/mcdonalds/nav_allmenu_v2:category-panel-left-desktop" 
                 alt="" width={80} height={80} />
-                <h1 className="font-extrabold">
+                <h1 className={`${ activeCategory.length == 0 ? "font-extrabold" : "" }`}>
                     Меню
                 </h1>
             </Link>
         </div>
         <div className="flex flex-col rounded-md border border-black justify-end
-        px-7 py-3 ">
+        py-3 ">
         { menuCategories.map((category) => (
             <Link href={`/eat/fullmenu/${category.id}`} key={ category.id } 
-            className="flex flex-row gap-5 items-center">
+            className={`flex flex-row gap-5 items-center px-7 
+            ${ activeCategory === category.title ? "border-l-4 border-red-500 rounded-sm" : ""}`}>
                 <Image src={category.image} alt="category" width={80} height={80} />
-                <h1>{ category.title }</h1>
+                <h1 className={`${ activeCategory === category.title ? "font-extrabold": "" }`}>
+                    { category.title }
+                </h1>
             </Link>
         )) }
         </div>

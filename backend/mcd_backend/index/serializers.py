@@ -18,4 +18,9 @@ class ProductSerializer(serializers.ModelSerializer):
         read_only_fields = fields
 
 
+class UniqueProductSerializer(serializers.ModelSerializer):
 
+    class Meta:
+        model = Product
+        fields = "__all__"
+        read_only_fields = ["id", "title", "image"]
