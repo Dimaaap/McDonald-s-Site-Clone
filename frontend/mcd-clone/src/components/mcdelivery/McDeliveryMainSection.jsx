@@ -1,16 +1,19 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image"
-import { FaGooglePlay, FaSortDown, FaApple } from "react-icons/fa";
+import { FaGooglePlay, FaSortDown, FaSortUp, FaApple } from "react-icons/fa";
 import { SelectCurierBtn, UploadAppBtn } from '../shared';
-import { useDeliveryService } from '@/store';
+import { useDeliveryService, useSelectedCity } from '@/store';
 import Link from 'next/link';
+import { CitiesWithDeliveryModal } from '../modals';
 
 
 export const McDeliveryMainSection = () => {
 
   const { chosenCourier } = useDeliveryService();
+  const { selectedCity } = useSelectedCity();
+  const [citiesModalOpen, setCitiesModalOpen] = useState(false)
 
   return (
     <div className="flex flex-col gap-7">
@@ -31,19 +34,27 @@ export const McDeliveryMainSection = () => {
           </label>
           <input className="ring-0 border-2 border-yellow-400 
           h-[50px] px-5 cursor-pointer rounded-md" 
-          disabled defaultValue="Луцьк" />
-          <div className="absolute w-[50px] h-[50px] 
+          disabled={ true }
+          value={ selectedCity }
+          onClick={() => setCitiesModalOpen(!citiesModalOpen)} />
+          
+          { citiesModalOpen && <CitiesWithDeliveryModal /> }
+          
+          <div className={`absolute w-[50px] h-[50px] 
           bg-yellow-400 text-center items-center 
-          text-black right-0 top-10 rounded-md">
-            <FaSortDown size={30} className="ml-[10px] mt-1
-            cursor-pointer" />
+          text-black right-0 top-10 rounded-md
+          `}
+          onClick={() => setCitiesModalOpen(!citiesModalOpen)}>
+            <FaSortDown size={30} className={`ml-[10px]
+            cursor-pointer transition-all duration-300 
+            ${citiesModalOpen ? "rotate-180 translate-y-[16px]": "translate-y-[5px]"}`} />
           </div>
         </div>
         <div className='w-1/2 flex flex-col gap-3 relative'>
           <label className="text-[1.1rem]">
             Оберіть кур'єра
           </label>
-          <SelectCurierBtn />
+          <SelectCurierBtn  />
         </div>
       </div>
       <div className="flex flex-row items-center my-5 

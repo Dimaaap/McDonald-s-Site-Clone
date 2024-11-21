@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import MenuCategory, Product
+from .models import MenuCategory, Product, City
 
 
 class MenuCategorySerializer(serializers.ModelSerializer):
@@ -24,3 +24,12 @@ class UniqueProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = "__all__"
         read_only_fields = ["id", "title", "image"]
+
+
+class CitiesSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = City
+        fields = ["id", "title", "has_glovo_delivery", "has_bolt_delivery",
+                  "glovo_area_image", "bolt_area_image"]
+        read_only_fields = fields

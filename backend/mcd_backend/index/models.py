@@ -19,10 +19,17 @@ class City(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     title = models.CharField(max_length=155, default="")
     slug = models.SlugField(max_length=155, default="")
+
+    has_glovo_delivery = models.BooleanField(default=False)
+    has_bolt_delivery = models.BooleanField(default=False)
+    glovo_area_image = models.URLField(default="")
+    bolt_area_image = models.URLField(default="")
+
     region = models.ForeignKey(Region, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.title
+
 
 class CityArea(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)

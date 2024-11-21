@@ -12,7 +12,11 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         try:
             for city in cities:
-                new_city = City.objects.create(title=city["title"])
+                new_city = City.objects.create(title=city["title"],
+                                               has_glovo_delivery=city.get("has_glovo_delivery", False),
+                                               has_bolt_delivery=city.get("has_bolt_delivery", False),
+                                               glovo_area_image=city.get("glovo_area_image", ""),
+                                               bolt_area_image=city.get("bolt_area_image", ""))
                 city_region = city["region"]
                 if city_region:
                     new_city.region = Region.objects.get(title=city["region"])

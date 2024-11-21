@@ -10,3 +10,5 @@ export { banners, foundationBanners } from './banners';
 export { faqElements } from "./faqElements";
 export { useFAQHandler } from "./useFAQHandler";
 export { useDeliveryService } from "./useDeliveryService";
+export { DailyCalories } from './dailyCaloriesNorm';
+export { useSelectedCity } from './useSelectedCity';

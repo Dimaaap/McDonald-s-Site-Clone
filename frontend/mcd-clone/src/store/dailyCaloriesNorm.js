@@ -1,0 +1,7 @@
+export const DailyCalories = {
+    DAILY_DIET: 2000,
+    DAILY_FATS: 67,
+    DAILY_CARBONHYDRATES: 267,
+    DAILY_PROTEINS: 78,
+    DAILY_SUGAR: 95
+}

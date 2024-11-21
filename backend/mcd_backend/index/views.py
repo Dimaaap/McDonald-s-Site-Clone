@@ -3,9 +3,13 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 from django.core.exceptions import ObjectDoesNotExist
+from django.db.models import Q
 
-from .models import MenuCategory, Product
-from .serializers import MenuCategorySerializer, ProductSerializer, UniqueProductSerializer
+from .models import MenuCategory, Product, City
+from .serializers import (MenuCategorySerializer,
+                          ProductSerializer,
+                          UniqueProductSerializer,
+                          CitiesSerializer)
 
 
 class MenuCategoryViewSet(viewsets.ModelViewSet):
@@ -20,6 +24,11 @@ class ProductViewSet(viewsets.ModelViewSet):
     permission_classes = [AllowAny]
 
 
+class AllCitiesWithDelivery(viewsets.ModelViewSet):
+    queryset = City.objects.filter(Q(has_glovo_delivery=True) | Q(has_bolt_delivery=True))
+    serializer_class = CitiesSerializer
+    permission_classes = [AllowAny]
+
 class UniqueProductView(APIView):
     def get(self, request, product_id):
         try:
@@ -32,7 +41,6 @@ class UniqueProductView(APIView):
 
         serializer = UniqueProductSerializer(product)
         return Response(serializer.data, status=status.HTTP_200_OK)
-
 
 class UniqueCategoryView(APIView):
     def get(self, request, category_id):

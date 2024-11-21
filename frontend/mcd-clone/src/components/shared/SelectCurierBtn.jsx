@@ -3,7 +3,7 @@
 import { useDeliveryService } from '@/store'
 import React from 'react'
 
-export const SelectCurierBtn = () => {
+export const SelectCurierBtn = ({ hasBoltDelivery=true }) => {
 
   const {chosenCourier, setChosenCourier} = useDeliveryService()
 
@@ -20,7 +20,8 @@ export const SelectCurierBtn = () => {
         <button className={`w-1/2 py-2 text-center 
         ${ chosenCourier === "bolt" ? "text-black bg-yellow-400" :
           "text-gray-500 bg-white"} font-medium`}
-          onClick={() => setChosenCourier("bolt")}>
+          onClick={() => setChosenCourier("bolt")}
+          disabled={ !hasBoltDelivery }>
             Bolt Food
         </button>
     </div>

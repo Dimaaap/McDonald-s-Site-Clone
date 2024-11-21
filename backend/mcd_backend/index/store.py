@@ -1419,15 +1419,25 @@ class DataStorage:
     CITIES = [
         {
             "title": "Київ",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Kyiv_Glovo_18112024.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Kyiv_Bolt_21032024_preview.jpg"
         },
         {
             "title": "Біла Церква",
-            "region": "Київська"
+            "region": "Київська",
+            "has_glovo_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_BilaTserkva_preview.jpg",
         },
         {
             "title": "Бориспіль",
-            "region": "Київська"
+            "region": "Київська",
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Boryspil_Glovo_25092024.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Boryspil_Bolt_25092024.jpg"
         },
         {
             "title": "Боярка",
@@ -1435,27 +1445,50 @@ class DataStorage:
         },
         {
             "title": "Бровари",
-            "region": "Київська"
+            "region": "Київська",
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Brovary_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Brovary_Bolt_28032024_preview.jpg"
         },
         {
             "title": "Буча",
-            "region": "Київська"
+            "region": "Київська",
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Bucha_Glovo_25092024.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Bucha_Bolt_24032024_preview.jpg"
         },
         {
             "title": "Вишгород",
-            "region": "Київська"
+            "region": "Київська",
+            "has_glovo_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Vyshhorod_preview.jpg",
+
         },
         {
             "title": "Вінниця",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Vinnycya_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Vinnytsya_Bolt_18032024_preview.jpg"
         },
         {
             "title": "Дніпро",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Dnipro_Glovo_16092024.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Dnipro_Bolt_24032024_preview.jpg"
         },
         {
             "title": "Житомир",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Zhitomir_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Zhytomyr_Bolt_preview.jpg"
         },
         {
             "title": "Запоріжжя",
@@ -1463,7 +1496,11 @@ class DataStorage:
         },
         {
             "title": "Івано-Франківськ",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_IvanoFrankivsk_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Frankivsk_Bolt_preview.jpg"
         },
         {
             "title": "Ковель",
@@ -1471,23 +1508,42 @@ class DataStorage:
         },
         {
             "title": "Кременчук",
-            "region": "Полтавська"
+            "region": "Полтавська",
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Kremenchug_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Kremenchuk_Bolt_preview.jpg"
         },
         {
             "title": "Кривий Ріг",
-            "region": "Дніпропетровська"
+            "region": "Дніпропетровська",
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Kryviy_Rig_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Kryvyy_Rig_Bolt_preview.jpg"
+
         },
         {
             "title": "Кропивницький",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Kropyvnytskyi_preview.jpg",
         },
         {
             "title": "Луцьк",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Lutsk_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Lutsk_Glovo_25092024.jpg"
         },
         {
             "title": "Львів",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Lviv_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Lviv_Bolt_24032024.jpg"
         },
         {
             "title": "Миколаїв",
@@ -1495,19 +1551,33 @@ class DataStorage:
         },
         {
             "title": "Одеса",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Odesa_Glovo_16092024.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Odesa_Bolt_24032024_preview.jpg"
         },
         {
             "title": "Олександрія",
-            "region": "Кіровоградська"
+            "region": "Кіровоградська",
+            "has_glovo_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Oleksandriya_preview.jpg",
         },
         {
             "title": "Полтава",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Poltava_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Poltava_preview.jpg"
         },
         {
             "title": "Рівне",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Rivne_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Rivne_Bolt_preview.jpg"
         },
         {
             "title": "Глибочиця",
@@ -1539,7 +1609,11 @@ class DataStorage:
         },
         {
             "title": "Тернопіль",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Ternopil_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Ternopil_Glovo_25092024.jpg"
         },
         {
             "title": "Харків",
@@ -1551,19 +1625,33 @@ class DataStorage:
         },
         {
             "title": "Хмельницький",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Khmelnytskiy_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Khmelnytskyy_Bolt_preview.jpg"
         },
         {
             "title": "Черкаси",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Cherkasy_Glovo_23092024.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Cherkasy_Bolt_21032024_preview.jpg"
         },
         {
             "title": "Чернівці",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "has_bolt_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/Chernivtsi_Glovo_preview.jpg",
+            "bolt_area_image": "https://ukraine.mcdonalds.ua/media/image/Bolt_Food/Chernivtsi_Bolt_preview.jpg"
         },
         {
             "title": "Чернігів",
-            "region": None
+            "region": None,
+            "has_glovo_delivery": True,
+            "glovo_area_image": "https://ukraine.mcdonalds.ua/media/image/glovo/map_Chernigiv_preview.jpg",
         },
         {
             "title": "Яремче",
