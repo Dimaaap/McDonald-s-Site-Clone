@@ -23,3 +23,4 @@ export { WorkFooter } from "./WorkFooter";
 export { FillAnket } from "./FillAnket";
 export { SelectCurierBtn } from "./SelectCurierBtn";
 export { CategoriesSidebar } from "./CategoriesSidebar";
+export { RMHSMainHeader } from "./RMHSMainHeader"

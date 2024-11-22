@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import Image from "next/image"
-import { FaGooglePlay, FaSortDown, FaSortUp, FaApple } from "react-icons/fa";
+import { FaGooglePlay, FaSortDown, FaApple } from "react-icons/fa";
 import { SelectCurierBtn, UploadAppBtn } from '../shared';
 import { useDeliveryService, useSelectedCity } from '@/store';
 import Link from 'next/link';
@@ -14,6 +14,7 @@ export const McDeliveryMainSection = () => {
   const { chosenCourier } = useDeliveryService();
   const { selectedCity } = useSelectedCity();
   const [citiesModalOpen, setCitiesModalOpen] = useState(false)
+
 
   return (
     <div className="flex flex-col gap-7">
@@ -35,7 +36,7 @@ export const McDeliveryMainSection = () => {
           <input className="ring-0 border-2 border-yellow-400 
           h-[50px] px-5 cursor-pointer rounded-md" 
           disabled={ true }
-          value={ selectedCity }
+          value={ selectedCity.title }
           onClick={() => setCitiesModalOpen(!citiesModalOpen)} />
           
           { citiesModalOpen && <CitiesWithDeliveryModal /> }
@@ -54,7 +55,7 @@ export const McDeliveryMainSection = () => {
           <label className="text-[1.1rem]">
             Оберіть кур'єра
           </label>
-          <SelectCurierBtn  />
+          <SelectCurierBtn hasBoltDelivery={ selectedCity.has_bolt_delivery } />
         </div>
       </div>
       <div className="flex flex-row items-center my-5 
@@ -82,11 +83,18 @@ export const McDeliveryMainSection = () => {
           </p>
         </div>
       </div>
-      <Link href="#" className="px-[5%] w-full mb-5">
-          <Image src="/delivery_map/map_Lutsk_preview.jpg" 
+      <div className="px-[5%] w-full mb-5 max-h-[500px] cursor-pointer">
+        { selectedCity.has_glovo_delivery & chosenCourier === "glovo" && (
+          <Image src={ selectedCity.glovo_area_image } 
           alt="map-lutsk-delivery" width={800} height={800} 
-          className="w-full"/>
-      </Link>
+          className="w-full object-cover max-h-[500px]"/>
+        ) }
+        { selectedCity.has_bolt_delivery & chosenCourier === "bolt" && (
+          <Image src={ selectedCity.bolt_area_image } 
+          alt="map-lutsk-delivery" width={800} height={500} 
+          className="w-full object-cover max-h-[500px]"/>
+        ) }
+      </div>
       <div className="text-center justify-center flex 
       flex-col gap-5 mb-10">
         <p>

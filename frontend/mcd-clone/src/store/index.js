@@ -12,3 +12,5 @@ export { useFAQHandler } from "./useFAQHandler";
 export { useDeliveryService } from "./useDeliveryService";
 export { DailyCalories } from './dailyCaloriesNorm';
 export { useSelectedCity } from './useSelectedCity';
+export { useCitiesList } from "./useCitiesList";
+export { useFamilyRoomsModal } from "./useFamilyRoomsModal";
