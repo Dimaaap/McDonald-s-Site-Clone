@@ -47,6 +47,13 @@ export const RMHSMainHeader = () => {
         setAboutModalOpen(false);
     }
 
+    const hideAllModals = () => {
+        setHowToJoinModal(false);
+        setOurThingsModal(false);
+        setFamilyRoomsModal(false);
+        setAboutModalOpen(false);
+    }
+
   return (
     <div className="flex flex-row justify-between gap-5 items-center 
     p-10 bg-white">
@@ -56,7 +63,7 @@ export const RMHSMainHeader = () => {
       </Link>
       <Link className="font-bold text-[1.1rem] hover:text-blue-400 
       hover:border-b-2 hover:border-blue-400" 
-      href="/rmhc">
+      href="/rmhc" onMouseEnter={() => hideAllModals()}>
         Головна
       </Link>
       <div className="font-bold text-[1.1rem] hover:text-blue-400 
@@ -89,12 +96,12 @@ export const RMHSMainHeader = () => {
 
       <Link className="font-bold text-[1.1rem] hover:text-blue-400 
       hover:border-b-2 hover:border-blue-400 cursor-pointer"
-      href="/news">
+      href="/news" onMouseEnter={() => hideAllModals()}>
         Новини
       </Link>
       <Link className="font-bold text-[1.1rem] hover:text-blue-400 
       hover:border-b-2 hover:border-blue-400 cursor-pointer"
-      href="/contacts">
+      href="/contacts" onMouseEnter={() => hideAllModals()}>
         Контакти
       </Link>
       <Link href="/#" className="hover:text-blue-400 

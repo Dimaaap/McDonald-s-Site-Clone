@@ -79,3 +79,36 @@ export const NewsRoomRouter = {
     VISUAL_MATERIALS: "/newsroom/media-assets",
     PRESS_CONTACTS: "/newsroom/press-contacts"
 }
+
+export const RMHCAboutRouter = {
+    ABOUT: "rmhc/about",
+    YEARS_50: "rmhc/50-years",
+    REPORTS: "rmhc/reports",
+    TEAM: "rmhc/about/team",
+    PARTNERS: "rmhc/partners",
+    SUPERVISORY_BOARD: "rmhc/supervisory-board"
+}
+
+export const FoundationThingsRouter = {
+    FAMILY_ROOMS: "rmhc/family-rooms",
+    MCDONALD_HOUSE: "rmhc/dim-ronalda-macdonalda",
+    SOM: "rmhc/som",
+    CURRICULUM: "rmhc/fcc-curriculum",
+    HELP: "rmhc/help"
+}
+
+export const FamilyRoomsRouter = {
+    OCHMATDYT: "rmhc/about/ndls-ohmatdyt",
+    RIVNE: "rmhc/about/rivne-hospital",
+    SUMY: "rmhc/about/sumy-hospital",
+    LVIV: "rmhc/about/lviv-hospital",
+    VINNYTSIA: "rmhc/about/vinnytsia-hospital",
+    KHARKIV: "rmhc/about/kharkiv-hospital"
+}
+
+export const HowToJoinRouter = {
+    DONATE: "rmhc/donate",
+    BECOME_PARTNER: "rmhc/join/become-partner",
+    SHOP: "rmhc/join/shop",
+    PAJAMAS_DAY: "rmhc/join/pajamas-day"
+}

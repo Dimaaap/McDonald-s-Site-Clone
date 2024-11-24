@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { FamilyRoomsRouter } from '@/store'
 
 export const FamilyRoomsModal = ({ closeModal }) => {
   return (
@@ -8,32 +9,32 @@ export const FamilyRoomsModal = ({ closeModal }) => {
     onMouseLeave={() => closeModal()}>
       <Link className="py-2 px-4 border-b border-white text-white 
         transition-all duration-300
-        hover:text-yellow-300" href="rmhc/about/ndls-ohmatdyt">
+        hover:text-yellow-300" href={ FamilyRoomsRouter.OCHMATDYT }>
             У НДЛС "Охматдит"
       </Link>
       <Link className="py-2 px-4 border-b border-white text-white 
         transition-all duration-300
-        hover:text-yellow-300" href="rmhc/about/rivne-hospital">
+        hover:text-yellow-300" href={ FamilyRoomsRouter.RIVNE }>
             У Ріненській обласній дитячій лікарні
       </Link>
       <Link className="py-2 px-4 border-b border-white text-white 
         transition-all duration-300
-        hover:text-yellow-300" href="rmhc/about/sumy-hospital">
+        hover:text-yellow-300" href={ FamilyRoomsRouter.SUMY }>
             У Сумській обласній дитячій лікарні
       </Link>
       <Link className="py-2 px-4 border-b border-white text-white 
         transition-all duration-300
-        hover:text-yellow-300" href="rmhc/about/lviv-hospital">
+        hover:text-yellow-300" href={ FamilyRoomsRouter.LVIV }>
             У Львівській обласній дитячій лікарні
       </Link>
       <Link className="py-2 px-4 border-b border-white text-white 
         transition-all duration-300
-        hover:text-yellow-300" href="rmhc/about/vinnytsia-hospital">
+        hover:text-yellow-300" href={ FamilyRoomsRouter.VINNYTSIA }>
             У Вінницькій обласній дитячій лікарні
       </Link>
       <Link className="py-2 px-4 border-b border-white text-white 
         transition-all duration-300
-        hover:text-yellow-300" href="rmhc/about/kharkiv-hospital">
+        hover:text-yellow-300" href={ FamilyRoomsRouter.KHARKIV }>
             У Харківській обласній дитячій лікарні
       </Link>
     </div>

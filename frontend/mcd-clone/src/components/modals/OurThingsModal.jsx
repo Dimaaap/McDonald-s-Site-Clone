@@ -1,9 +1,10 @@
 "use client";
 
-import { useFamilyRoomsModal } from '@/store';
+import { FoundationThingsRouter, RMHCAboutRouter, useFamilyRoomsModal } from '@/store';
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { RMHCHeaderLink } from '../shared';
 
 export const OurThingsModal = ({ closeModal }) => {
 
@@ -15,32 +16,19 @@ export const OurThingsModal = ({ closeModal }) => {
     onMouseLeave={() => closeModal()}>
         <Link className="py-2 px-4 border-b border-white text-white 
         transition-all duration-300 flex flex-row justify-between
-        hover:text-yellow-300" href="rmhc/family-rooms"
+        hover:text-yellow-300" href={ FoundationThingsRouter.FAMILY_ROOMS }
         onMouseEnter={() => setFamilyRoomsModal(true)}>
             Сімейні Кімнати
             <ChevronRight size={ 20 } />
         </Link>
-        <Link className="py-2 px-4 border-b border-white text-white 
-        transition-all duration-300
-        hover:text-yellow-300" href="rmhc/dim-ronalda-macdonalda"
-        onMouseEnter={() => setFamilyRoomsModal(false)}>
-            Дім Рональда МакДональда
-        </Link>
-        <Link className="py-2 px-4 border-b border-white text-white 
-        transition-all duration-300
-        hover:text-yellow-300" href="rmhc/som">
-            Розвиток сімейно-орієнтованої медицини
-        </Link>
-        <Link className="py-2 px-4 border-b border-white text-white 
-        transition-all duration-300
-        hover:text-yellow-300" href="rmhc/fcc-curriculum">
-            Навчальнй курс для медиків
-        </Link>
-        <Link className="py-2 px-4 border-b border-white text-white 
-        transition-all duration-300
-        hover:text-yellow-300" href="rmhc/help">
-            Гуманітарна домомога
-        </Link>
+        <RMHCHeaderLink text="Дім Рональда МакДональда" href={ FoundationThingsRouter.MCDONALD_HOUSE } 
+        onMouseEnter={ () => setFamilyRoomsModal(false) }/>
+        <RMHCHeaderLink text="Розвиток сімейно-орієнтованої медицини" 
+        href={ FoundationThingsRouter.SOM  } />
+        <RMHCHeaderLink text="Навчальний курс для медиків" 
+        href={ FoundationThingsRouter.CURRICULUM  } />
+        <RMHCHeaderLink text="Гуманітарна допомога" 
+        href={ FoundationThingsRouter.HELP  } />
     </div>
   )
 }
