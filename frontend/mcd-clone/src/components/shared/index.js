@@ -25,3 +25,6 @@ export { SelectCurierBtn } from "./SelectCurierBtn";
 export { CategoriesSidebar } from "./CategoriesSidebar";
 export { RMHSMainHeader } from "./RMHSMainHeader";
 export { RMHCHeaderLink } from "./RMHCHeaderLink";
+export { OurImpactCart } from "./OurImpactCart";
+export { OurAchievements } from "./OurAchievements";
+export { WhatFamilySayCart } from "./WhatFamilySayCart";

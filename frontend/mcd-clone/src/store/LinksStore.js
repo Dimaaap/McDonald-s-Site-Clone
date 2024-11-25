@@ -81,34 +81,34 @@ export const NewsRoomRouter = {
 }
 
 export const RMHCAboutRouter = {
-    ABOUT: "rmhc/about",
-    YEARS_50: "rmhc/50-years",
-    REPORTS: "rmhc/reports",
-    TEAM: "rmhc/about/team",
-    PARTNERS: "rmhc/partners",
-    SUPERVISORY_BOARD: "rmhc/supervisory-board"
+    ABOUT: "/rmhs/about",
+    YEARS_50: "/rmhs/50-years",
+    REPORTS: "/rmhs/reports",
+    TEAM: "/rmhs/about/team",
+    PARTNERS: "/rmhs/partners",
+    SUPERVISORY_BOARD: "/rmhs/supervisory-board"
 }
 
 export const FoundationThingsRouter = {
-    FAMILY_ROOMS: "rmhc/family-rooms",
-    MCDONALD_HOUSE: "rmhc/dim-ronalda-macdonalda",
-    SOM: "rmhc/som",
-    CURRICULUM: "rmhc/fcc-curriculum",
-    HELP: "rmhc/help"
+    FAMILY_ROOMS: "/rmhs/family-rooms",
+    MCDONALD_HOUSE: "/rmhs/dim-ronalda-macdonalda",
+    SOM: "/rmhs/som",
+    CURRICULUM: "/rmhs/fcc-curriculum",
+    HELP: "/rmhs/help"
 }
 
 export const FamilyRoomsRouter = {
-    OCHMATDYT: "rmhc/about/ndls-ohmatdyt",
-    RIVNE: "rmhc/about/rivne-hospital",
-    SUMY: "rmhc/about/sumy-hospital",
-    LVIV: "rmhc/about/lviv-hospital",
-    VINNYTSIA: "rmhc/about/vinnytsia-hospital",
-    KHARKIV: "rmhc/about/kharkiv-hospital"
+    OCHMATDYT: "/rmhs/about/ndls-ohmatdyt",
+    RIVNE: "/rmhs/about/rivne-hospital",
+    SUMY: "/rmhs/about/sumy-hospital",
+    LVIV: "/rmhs/about/lviv-hospital",
+    VINNYTSIA: "/rmhs/about/vinnytsia-hospital",
+    KHARKIV: "/rmhs/about/kharkiv-hospital"
 }
 
 export const HowToJoinRouter = {
-    DONATE: "rmhc/donate",
-    BECOME_PARTNER: "rmhc/join/become-partner",
-    SHOP: "rmhc/join/shop",
-    PAJAMAS_DAY: "rmhc/join/pajamas-day"
+    DONATE: "/rmhs/donate",
+    BECOME_PARTNER: "/rmhs/join/become-partner",
+    SHOP: "/rmhs/join/shop",
+    PAJAMAS_DAY: "/rmhs/join/pajamas-day"
 }

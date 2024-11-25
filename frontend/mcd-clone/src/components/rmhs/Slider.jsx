@@ -28,7 +28,8 @@ export const Slider = () => {
 
   return (
     <>
-      <Link className="w-full h-screen relative mb-5" href={ sliderImages[currentSlide].imageHref }>
+      <Link className="w-full h-screen relative mb-5 mt-[20px]" 
+      href={ sliderImages[currentSlide].imageHref }>
         <Image src={ sliderImages[currentSlide].imageSrc } 
         className="w-full transition-all duration-300 mb-5" 
         width={1000} height={1000} alt="" />

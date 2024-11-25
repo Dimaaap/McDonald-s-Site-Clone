@@ -56,14 +56,14 @@ export const RMHSMainHeader = () => {
 
   return (
     <div className="flex flex-row justify-between gap-5 items-center 
-    p-10 bg-white">
-      <Link href="/rmhc" className="">
+    p-10 bg-white fixed top-0 left-0 z-50 w-full mb-[20%]">
+      <Link href="/rmhs" className="">
         <Image src="/rmhc/main-logo.webp" alt="RMHC Logo" width={150} 
         height={150} />
       </Link>
       <Link className="font-bold text-[1.1rem] hover:text-blue-400 
       hover:border-b-2 hover:border-blue-400" 
-      href="/rmhc" onMouseEnter={() => hideAllModals()}>
+      href="/rmhs" onMouseEnter={() => hideAllModals()}>
         Головна
       </Link>
       <div className="font-bold text-[1.1rem] hover:text-blue-400 

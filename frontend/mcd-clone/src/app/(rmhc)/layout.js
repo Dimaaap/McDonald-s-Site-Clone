@@ -1,6 +1,6 @@
 import { Nunito } from "next/font/google"
 import "../globals.css"
-import { RMHSMainHeader } from "@/components";
+import { RMHSMainHeader, MainFooterRMHC, BottomFooter } from "@/components";
 
 
 const nunito = Nunito({
@@ -18,6 +18,8 @@ export default function RMHSLayout({ children }) {
       >
         <RMHSMainHeader />
         {children}
+        <MainFooterRMHC />
+        <BottomFooter />
       </body>
     </html>
   );

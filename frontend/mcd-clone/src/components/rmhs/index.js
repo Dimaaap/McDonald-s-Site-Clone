@@ -1,3 +1,10 @@
 export { RMHSMainContainer } from "./RMHSMainContainer";
 export { RMHSMainPage } from "./RMHSMainPage";
 export { Slider } from './Slider';
+export { MainFooterRMHC } from "./MainFooter"
+export { BottomFooter } from "./BottomFooter";
+export { AboutMainSection } from "./AboutMainSection";
+export { DonateBanner } from "./DonateBanner";
+export { YearsMainSection } from "./YearsMainSection";
+export { ReportsMainSection } from "./ReportsMainSection";
+export { TeamMainSection } from "./TeamMainSection";
