@@ -28,3 +28,4 @@ export { RMHCHeaderLink } from "./RMHCHeaderLink";
 export { OurImpactCart } from "./OurImpactCart";
 export { OurAchievements } from "./OurAchievements";
 export { WhatFamilySayCart } from "./WhatFamilySayCart";
+export { PersonalCard } from "./PersonalCard";

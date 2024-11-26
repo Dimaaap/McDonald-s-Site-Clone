@@ -18,3 +18,4 @@ export { useSelectedCity } from './useSelectedCity';
 export { useCitiesList } from "./useCitiesList";
 export { useFamilyRoomsModal } from "./useFamilyRoomsModal";
 export { sliderImages } from "./sliderImages";
+export { supervisorsSquad  } from './supervisoryBoard'

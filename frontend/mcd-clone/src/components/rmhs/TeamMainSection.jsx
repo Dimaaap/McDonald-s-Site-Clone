@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import React from 'react'
+import Image from 'next/image';
+import { PersonalCard } from '../shared';
 
 export const TeamMainSection = () => {
   return (
@@ -27,8 +28,60 @@ export const TeamMainSection = () => {
             </p>
         </div>
       </div>
-      <div className="p-[5%] grid grid-cols-3 gap-12 mt-[5%]">
-        
+      <div className="p-[5%] grid grid-cols-3 gap-3 mt-[3%] gap-y-10">
+        <PersonalCard imageSrc="galyna-solovey.jpg" name="Галина Соловей"
+        position="Директорка" />
+
+        <PersonalCard imageSrc="olena-halchak.jpg" name="Олена Гальчак"
+        position="Менеджерка програм" />
+
+        <PersonalCard imageSrc="anna_vlasenko.jpg" name="Анна Власенко"
+        position="Менеджерка з фандрейзингу" />
+
+        <PersonalCard imageSrc="elnara_imanova.jpg" name="Ельнара Іманова"
+        position="Керівниця напрямку комунікацій" />
+
+        <PersonalCard imageSrc="olena_markova.jpg" name="Олена Маркова" 
+        position="Асистентка відділу комунікацій" />
+
+        <PersonalCard imageSrc="iryna_danylovska.jpg" name="Ірина Даниловська"
+        position="Головна бухгалтерка" />
+      </div>
+      <div className="p-[5%] flex flex-col gap-10">
+        <h1 className="text-4xl font-extrabold text-blue-300 text-center">
+          Для запитань і пропозицій:
+        </h1>
+        <form className="w-[35%] m-auto bg-blue-50 px-5 py-10 flex flex-col gap-5">
+          <div className="flex flex-col gap-1">
+            <label>
+              Ім'я (обов'язково)
+            </label>
+            <input type="text" className="h-[45px] w-full px-5 border border-black" />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label>
+              Телефон (обов'язково)
+            </label>
+            <input type="text" className="h-[45px] w-full px-5 border border-black" />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label>
+              Емейл (обов'язково)
+            </label>
+            <input type="text" className="h-[45px] w-full px-5 border border-black" />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label>
+              Ваше повідомлення (обов'язково)
+            </label>
+            <textarea cols={10} rows={5} className="border border-black 
+            px-5 py-3 resize-none" />
+          </div>
+          <button type="submit" className="bg-blue-800 hover:bg-gray-500 
+          max-w-[35%] px-5 py-3 text-white font-bold text-center rounded-md">
+            Надіслати
+          </button>
+        </form>
       </div>
     </div>
   )
