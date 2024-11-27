@@ -19,3 +19,5 @@ export { VinnytsiaHospitalMainSection } from "./VinnytsiaHospitalMainSection";
 export { KharkivMainSection } from "./KharkivMainSection";
 export { McDonaldHouseMainSection } from "./McDonaldHouseMainSection";
 export { SomMainSection } from "./SomMainSection";
+export { CurriculumMainSection } from "./CurriculumMainSection";
+export { HelpMainSection } from "./HelpMainSection"

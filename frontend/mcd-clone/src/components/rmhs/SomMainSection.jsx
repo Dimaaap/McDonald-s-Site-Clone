@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { OurImpactCart } from '../shared'
 
 export const SomMainSection = () => {
@@ -187,6 +188,236 @@ export const SomMainSection = () => {
             <h1 className="text-4xl font-extrabold text-blue-300">
                 Наші досягення
             </h1>
+        </div>
+        
+        <div className="px-[5%] grid grid-cols-3 gap-x-7 gap-y-10">
+            <div className="flex flex-col gap-3 text-left">
+                <Image src="https://rmhc.org.ua/wp-content/uploads/DSC_4412-1.jpg" alt="" width={400} 
+                height={400} className="w-full" />
+                <p className="text-xl font-semibold">
+                    6 Сімейних кімнат
+                </p>
+                <p>
+                    у найбільших дитячих лікарнях України, щоб батьки й діти були поруч
+                </p>
+            </div>
+            <div className="flex flex-col gap-3 text-left">
+                <Image src="https://rmhc.org.ua/wp-content/uploads/410182559_3266381733505950_5294772333796115794_n.jpg" alt="" width={400} 
+                height={400} className="w-full" />
+                <p className="text-xl font-semibold">
+                    6 конференцій національного рівня
+                </p>
+                <p>
+                    50 експертів, більше як 10 000 медиків залучено
+                </p>
+            </div>
+            <div className="flex flex-col gap-3 text-left">
+                <Image src="https://rmhc.org.ua/wp-content/uploads/6-4.jpg" alt="" width={400} 
+                height={400} className="w-full" />
+                <p className="text-xl font-semibold">
+                    Навчальний курс
+                </p>
+                <p>
+                    з сімейно орієнтованої медицини для студентів медзакладів
+                </p>
+            </div>
+            <div className="flex flex-col gap-3 text-left">
+                <Image src="https://rmhc.org.ua/wp-content/uploads/photo_2021-06-18_16-01-16-2.jpg" alt="" width={400} 
+                height={400} className="w-full" />
+                <p className="text-xl font-semibold">
+                    9 відеокурсів
+                </p>
+                <p>
+                    для медиків і  батьків на тему сімейно  орієнтованої медицини
+                </p>
+            </div>
+            <div className="flex flex-col gap-3 text-left">
+                <Image src="https://rmhc.org.ua/wp-content/uploads/VAS_2021.jpg" alt="" width={400} 
+                height={400} className="w-full" />
+                <p className="text-xl font-semibold">
+                    4 тренінги
+                </p>
+                <p>
+                    в найбільших дитячих лікарнях для лікарів, медичних сестер і братів
+                </p>
+            </div>
+            <div className="flex flex-col gap-3 text-left">
+                <Image src="https://rmhc.org.ua/wp-content/uploads/McDonalds_Palm_02907.jpg" alt="" width={400} 
+                height={400} className="w-full" />
+                <p className="text-xl font-semibold">
+                    Національна освітня кампанія
+                </p>
+                <p>
+                    охопила більше як 20 000 000 контактів
+                </p>
+            </div>
+        </div>
+
+        <div className="px-[5%] text-center">
+            <h1 className="text-4xl font-extrabold text-blue-300">
+                Запрошуємо дізнатися більше з наших відеороликів
+            </h1>
+        </div>
+
+        <div className="px-[5%] text-center">
+            <h1 className="text-4xl font-extrabold text-blue-300">
+                Для медиків
+            </h1>
+        </div>
+
+        <div className="px-[5%] grid grid-cols-4 gap-7">
+            <div className="flex flex-col gap-3">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/wZmQ7m95SdU?si=VJ8v-PaxQWYF7cEG" 
+                title="YouTube video player" frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen className="w-full max-h-[30vh]" />
+                <p className="text-left">
+                    Поширення сімейно орієнтованого підходу в дитячих лікарнях
+                </p>
+            </div>
+            <div className="flex flex-col gap-3">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/9peb03xtNyQ?si=sQeVfC5b7Xgov1A-" 
+                title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" allowFullScreen 
+                className="w-full max-h-[30vh]" />
+                <p className="text-left">
+                    Основи сімейно орієнтованого підходу
+                </p>
+            </div>
+            <div className="flex flex-col gap-3">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/1lvlIk2v2HI?si=OoGEj_09XPYBKoC_" 
+                title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" allowFullScreen 
+                className="w-full max-h-[30vh]" />
+                <p className="text-left">
+                    Профілактика емоційного вигорання
+                </p>
+            </div>
+            <div className="flex flex-col gap-3">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/HJpGDutumsA?si=aif39UcsS9DpaO-E" 
+                title="YouTube video player" frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen className="w-full max-h-[30vh]" />
+                <p className="text-left">
+                    Як налагодити комунікацію між родинами і лікарями
+                </p>
+            </div>
+        </div>
+
+        <div className="px-[5%] text-center">
+            <h1 className="text-4xl font-extrabold text-blue-300">
+                Для батьків хворих дітей
+            </h1>
+        </div>
+
+        <div className="px-[5%] grid grid-cols-4 gap-7">
+            <div className="flex flex-col gap-3">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/A6lFsz2NCzg?si=JulZvEE_5p8xmJuA" 
+                title="YouTube video player" frameBorder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                web-share" referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen className="w-full max-h-[30vh]" />
+                <p className="text-left">
+                    Як батькам підтримувати дітей під час лікування
+                </p>
+            </div>
+            <div className="flex flex-col gap-3">
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/hSYXCuV8AVw?si=hKdoXkMP6CiH75kP" 
+                title="YouTube video player" frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen className="w-full max-h-[30vh]" />
+                <p className="text-left">
+                    Запитай у педіатра. Побудова довірливих стосунків між лікарями і батьками
+                </p>
+            </div>
+            <div className="flex flex-col gap-3">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/XrCiO7N1OPU?si=wVXHO4fOdzlk-uPs" 
+                title="YouTube video player" frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen className="w-full max-h-[30vh]" />
+                <p className="text-left">
+                    Підготовка до візиту до лікаря
+                </p>
+            </div>
+            <div className="flex flex-col gap-3">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/qKy0MKoMbC8?si=3slDFaiN8stTB7xX" 
+                title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" allowFullScreen 
+                className="w-full max-h-[30vh]" />
+                <p className="text-left">
+                    Як повідомити дитині про важкий діагноз
+                </p>
+            </div>
+        </div>
+
+        <div className="px-[5%] text-center">
+            <h1 className="text-4xl font-extrabold text-blue-300">
+                Дізнайтеся більше про сімейно орієнтовану медицину
+            </h1>
+        </div>
+
+        <div className="px-[5%] flex flex-row gap-10 items-center">
+            <div className="w-1/2 flex flex-col gap-0">
+                <Link href="https://www.ipfcc.org/about/pfcc.html">
+                    <Image src="https://rmhc.org.ua/wp-content/uploads/ipfcc.png" alt="" 
+                    width={400} height={400} className="w-full m-auto"/>
+                </Link>
+                <p className="text-lg text-left m-auto">
+                    Інститут пацієнто й сімейно орієнтованої медицини
+                </p>
+            </div>
+            <div className="w-1/2 flex flex-col gap-0">
+                <Link href="https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/02/effective-patient-physician-communication">
+                    <Image src="https://rmhc.org.ua/wp-content/uploads/acog.png" alt="" 
+                    width={400} height={400} className="w-full m-auto"/>
+                </Link>
+                <p className="text-lg text-left m-auto">
+                    Американський коледж акушерів і гінекологів
+                </p>
+            </div>
+        </div>
+
+        <div className="px-[5%] text-center">
+            <h1 className="text-4xl font-extrabold text-blue-300">
+                Про Фундацію Дім Рональда МакДональда в Україні
+            </h1>
+        </div>
+
+        <div className="px-[5%] flex flex-row items-center gap-5">
+            <div className="w-1/2">
+                <Image src="https://rmhc.org.ua/wp-content/uploads/%D1%81%D0%B5%D1%81%D1%82%D1%80%D0%B8%D1%87%D0%BA%D0%B82-1.jpg"
+                alt="" width={400} height={400} className="w-full" />
+            </div>
+            <div className="w-1/2 text-left text-xl">
+                <p>
+                    В Україні Фундація Дім Рональда МакДональда розпочала свою діяльність 2016 року. 
+                    Ми пишаємося бути частиною глобальної організації, маючи змогу підтримувати 
+                    українські сім’ї в найважчі для них часи. 2017 року відкрито першу Сімейну 
+                    кімнату в “Охматдит” Центру дитячої медицини у Львові. За весь час відкрито 
+                    6 Сімейних кімнат у найбільших дитячих лікарнях України. З початком війни 
+                    Фундація започаткувала гуманітарні програми, надавши допомогу на 120 млн грн. 
+                    Для розвитку системи охорони здоров’я Фундація реалізовує навчальні програми 
+                    для лікарів на тему сімейно орієнтованої медицини: щороку проводить всеукраїнські 
+                    конференції, реалізовує курси з підвищення кваліфікації медиків на порталі НСЗУ, 
+                    розробила серію відеокурсів для лікарів і батьків на своєму ютуб-каналі, 
+                    реалізовує навчальний курс в одному з найбільших медичних ЗВО України.
+                </p>
+            </div>
         </div>
     </div>
   )

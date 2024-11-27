@@ -19,3 +19,4 @@ export { useCitiesList } from "./useCitiesList";
 export { useFamilyRoomsModal } from "./useFamilyRoomsModal";
 export { sliderImages } from "./sliderImages";
 export { supervisorsSquad  } from './supervisoryBoard'
+export { firstSliderImages, secondSliderImages, ThirdSliderImages } from './helpImages';
