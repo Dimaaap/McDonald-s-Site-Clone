@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CiHospital1 } from "react-icons/ci";
 import { PiAmbulanceLight, PiBedBold } from "react-icons/pi";
 import { FaShoppingBasket, FaStethoscope } from "react-icons/fa";
@@ -11,77 +11,28 @@ import { TiPlus } from "react-icons/ti";
 import { BsRouter } from "react-icons/bs";
 import { RiTreasureMapFill } from "react-icons/ri";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { firstSliderImages, secondSliderImages } from '@/store';
+import { firstSliderImages, secondSliderImages, 
+    useFullImageOpenModal, useHelpModal } from '@/store';
 import { thirdSliderImages } from '@/store/helpImages';
 import { FullSliderImageModal } from '../modals';
 
 export const HelpMainSection = () => {
 
-    const [firstSlider, setFirstSlider] = useState(0)
-    const [secondSlider, setSecondSlider] = useState(0)
-    const [thirdSlider, setThirdSlider] = useState(0)
+    const { firstSlider, secondSlider, thirdSlider, setPrevSlider, 
+        setNextSlider } = useHelpModal(); 
+    const { isModalOpen, setIsModalOpen } = useFullImageOpenModal();
+    const [curSliderImages, setCurSliderImages] = useState(null)
 
-    const [modalOpen, setModalOpen] = useState(false)
-    const [selectedImage, setSelectedImage] = useState("")
-
-    const setPrevSlider = (slider) => {
-        if(slider === "third"){
-            if(thirdSlider === 0){
-                setThirdSlider(7)
-            } else {
-                setThirdSlider(thirdSlider - 1)  
-            }
-        } else if(slider === "second"){
-            if(secondSlider === 0){
-                setSecondSlider(13)
-            } else {
-                setSecondSlider(secondSlider - 1)  
-            }
-            
+    const handleImageModalOpen = (sliderImages) => {
+        if(!isModalOpen){
+            setIsModalOpen(true);
+            setCurSliderImages(sliderImages)
         } else {
-            if(firstSlider === 0){
-                setFirstSlider(13)
-            } else {
-              setFirstSlider(firstSlider - 1)  
-            }
-            
+            setIsModalOpen(false);
+            setCurSliderImages([])
         }
     }
 
-    const setNextSlider = (slider) => {
-        if(slider === "third"){
-            if(thirdSlider === 7){
-                setThirdSlider(0)
-            } else {
-                setThirdSlider(thirdSlider + 1)    
-            }
-           
-        } else if(slider === "second"){
-            if(secondSlider === 13){
-                setSecondSlider(0)
-            } else {
-              setSecondSlider(secondSlider + 1)  
-            }
-        } else {
-            if(firstSlider === 13){
-                setFirstSlider(0)
-            } else {
-                setFirstSlider(firstSlider + 1) 
-            }
-            
-        }
-    }
-
-    const handleModalOpen = (imageSrc) => {
-        if(!modalOpen) {
-            setModalOpen(true);
-            setSelectedImage(imageSrc)
-        } else {
-            setModalOpen(false);
-            setSelectedImage("")
-        }
-    }
- 
   return (
     <div className="flex flex-col gap-10">
         <div className="w-full h-screen 
@@ -109,18 +60,22 @@ export const HelpMainSection = () => {
         </div>
 
         <div className="px-[5%] grid grid-cols-3 gap-5">
+            { isModalOpen && <FullSliderImageModal slidersList={ curSliderImages } /> }
             <div className="flex flex-col gap-5 text-left text-xl relative">
                 <p className="text-blue-300 text-xl font-semibold">
                     Програма «Медичне обладнання»
                 </p>
                 <Image src={ firstSliderImages[firstSlider].src } 
-                alt="" width={200} height={200} className="w-full border-none cursor-pointer"
-                onClick={ () => handleModalOpen(firstSliderImages[firstSlider].src) } />
+                alt="" width={200} height={200} 
+                className="w-full border-none cursor-pointer"
+                onClick={() => handleImageModalOpen(firstSliderImages)} />
 
                 <ChevronLeft size={35} className="absolute text-white font-bold top-32 
                 left-3 text-center justify-center
                 cursor-pointer p-[1%] rounded-full border border-white hover:bg-white 
-                hover:text-gray-500" onClick={ () => setPrevSlider("first") }/>
+                hover:text-gray-500"
+                onClick={ () => setPrevSlider("first") }/>
+
                 <ChevronRight size={35} className="absolute text-white font-bold top-32 
                 right-3 text-center justify-center
                 cursor-pointer p-[1%] rounded-full border border-white hover:bg-white 
@@ -167,23 +122,22 @@ export const HelpMainSection = () => {
                     </p>
                 </div>
             </div>
-
-            { modalOpen && <FullSliderImageModal imageSrc={selectedImage} />}
             
             <div className="flex flex-col gap-5 text-left text-xl relative">
                 <p className="text-blue-300 text-xl font-semibold">
                     Програма «Продуктовий набір»
                 </p>
                 <Image src={ secondSliderImages[secondSlider].src } alt=""
-                width={200} height={200} className="w-full" />
+                width={200} height={200} className="w-full cursor-pointer"  />
+
                 <ChevronLeft size={35} className="absolute text-white font-bold top-32 
                 left-3 text-center justify-center
                 cursor-pointer p-[1%] rounded-full border border-white hover:bg-white 
-                hover:text-gray-500" onClick={() => setPrevSlider("second") } />
+                hover:text-gray-500" onClick={ () => setPrevSlider("second") } />
                 <ChevronRight size={35} className="absolute text-white font-bold top-32 
                 right-3 text-center justify-center
                 cursor-pointer p-[1%] rounded-full border border-white hover:bg-white 
-                hover:text-gray-500" onClick={() => setNextSlider("second")} />
+                hover:text-gray-500" onClick={ () => setNextSlider("second") } />
 
                 <p className="mx-auto">
                     Через війну мільйони українських родин покинули свої домівки або 
@@ -227,16 +181,18 @@ export const HelpMainSection = () => {
                 <p className="text-blue-300 text-xl font-semibold">
                     Гуманітарна допомога
                 </p>
-                <Image src={ thirdSliderImages[thirdSlider].src } 
-                alt="" width={200} height={200} className="w-full" />
+                <Image src={ thirdSliderImages[thirdSlider].src }
+                alt="" width={200} height={200} className="w-full cursor-pointer" />
+
                 <ChevronLeft size={35} className="absolute text-white font-bold top-32 
                 left-3 text-center justify-center
                 cursor-pointer p-[1%] rounded-full border border-white hover:bg-white 
                 hover:text-gray-500" onClick={ () => setPrevSlider("third") } />
+
                 <ChevronRight size={35} className="absolute text-white font-bold top-32 
                 right-3 text-center justify-center
                 cursor-pointer p-[1%] rounded-full border border-white hover:bg-white 
-                hover:text-gray-500" onClick={ () => setNextSlider("third")} />
+                hover:text-gray-500" onClick={ () => setNextSlider("third") } />
 
                 <p className="mx-auto">
                     На початку війни надали гуманітарну допомогу родинам, що цього потребували: 

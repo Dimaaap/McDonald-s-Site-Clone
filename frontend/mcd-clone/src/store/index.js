@@ -19,4 +19,6 @@ export { useCitiesList } from "./useCitiesList";
 export { useFamilyRoomsModal } from "./useFamilyRoomsModal";
 export { sliderImages } from "./sliderImages";
 export { supervisorsSquad  } from './supervisoryBoard'
-export { firstSliderImages, secondSliderImages, ThirdSliderImages } from './helpImages';
+export { firstSliderImages, secondSliderImages, thirdSliderImages } from './helpImages';
+export { useHelpModal } from "./useHelpModal"
+export { useFullImageOpenModal } from "./useFullImageOpenModal"
