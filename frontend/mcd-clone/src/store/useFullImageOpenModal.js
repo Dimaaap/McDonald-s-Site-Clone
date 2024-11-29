@@ -6,5 +6,6 @@ export const useFullImageOpenModal = create((set) => ({
 
     setIsModalOpen: () => set((state) => ({
         isModalOpen: !state.isModalOpen
-    }))
+    })),
+    
 }))

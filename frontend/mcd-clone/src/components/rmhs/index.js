@@ -20,4 +20,8 @@ export { KharkivMainSection } from "./KharkivMainSection";
 export { McDonaldHouseMainSection } from "./McDonaldHouseMainSection";
 export { SomMainSection } from "./SomMainSection";
 export { CurriculumMainSection } from "./CurriculumMainSection";
-export { HelpMainSection } from "./HelpMainSection"
+export { HelpMainSection } from "./HelpMainSection";
+export { DonateMainSection } from "./DonateMainSection";
+export { BecomePartnerMainSection } from "./BecomePartnerMainSection";
+export { StickersMainSection } from "./StickersMainSection"
+export { PajamasMainSection } from "./PajamasMainSection";

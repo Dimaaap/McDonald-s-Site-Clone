@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { CiHospital1 } from "react-icons/ci";
 import { PiAmbulanceLight, PiBedBold } from "react-icons/pi";
 import { FaShoppingBasket, FaStethoscope } from "react-icons/fa";
@@ -21,15 +21,18 @@ export const HelpMainSection = () => {
     const { firstSlider, secondSlider, thirdSlider, setPrevSlider, 
         setNextSlider } = useHelpModal(); 
     const { isModalOpen, setIsModalOpen } = useFullImageOpenModal();
-    const [curSliderImages, setCurSliderImages] = useState(null)
+    const [curSliderImages, setCurSliderImages] = useState({})
+    const [ curIndex, setCurIndex ] = useState(-1)
 
-    const handleImageModalOpen = (sliderImages) => {
+    const handleImageModalOpen = (sliderImages, imageSrc, index) => {
         if(!isModalOpen){
             setIsModalOpen(true);
-            setCurSliderImages(sliderImages)
+            setCurSliderImages(sliderImages);
+            setCurIndex(index)
         } else {
             setIsModalOpen(false);
-            setCurSliderImages([])
+            setCurSliderImages({});
+            setCurIndex(-1)
         }
     }
 
@@ -60,7 +63,8 @@ export const HelpMainSection = () => {
         </div>
 
         <div className="px-[5%] grid grid-cols-3 gap-5">
-            { isModalOpen && <FullSliderImageModal slidersList={ curSliderImages } /> }
+            { isModalOpen && <FullSliderImageModal slidersList={ curSliderImages }
+            index={ curIndex } /> }
             <div className="flex flex-col gap-5 text-left text-xl relative">
                 <p className="text-blue-300 text-xl font-semibold">
                     Програма «Медичне обладнання»
@@ -68,7 +72,8 @@ export const HelpMainSection = () => {
                 <Image src={ firstSliderImages[firstSlider].src } 
                 alt="" width={200} height={200} 
                 className="w-full border-none cursor-pointer"
-                onClick={() => handleImageModalOpen(firstSliderImages)} />
+                onClick={() => handleImageModalOpen("first", 
+                firstSliderImages[firstSlider].src, firstSlider)} />
 
                 <ChevronLeft size={35} className="absolute text-white font-bold top-32 
                 left-3 text-center justify-center
@@ -128,7 +133,9 @@ export const HelpMainSection = () => {
                     Програма «Продуктовий набір»
                 </p>
                 <Image src={ secondSliderImages[secondSlider].src } alt=""
-                width={200} height={200} className="w-full cursor-pointer"  />
+                width={200} height={200} className="w-full cursor-pointer" 
+                onClick={() => handleImageModalOpen("second", 
+                secondSliderImages[secondSlider].src, secondSlider)} />
 
                 <ChevronLeft size={35} className="absolute text-white font-bold top-32 
                 left-3 text-center justify-center
@@ -182,7 +189,9 @@ export const HelpMainSection = () => {
                     Гуманітарна допомога
                 </p>
                 <Image src={ thirdSliderImages[thirdSlider].src }
-                alt="" width={200} height={200} className="w-full cursor-pointer" />
+                alt="" width={200} height={200} className="w-full cursor-pointer" 
+                onClick={() => handleImageModalOpen("third", 
+                thirdSliderImages[thirdSlider].src, thirdSlider)}/>
 
                 <ChevronLeft size={35} className="absolute text-white font-bold top-32 
                 left-3 text-center justify-center

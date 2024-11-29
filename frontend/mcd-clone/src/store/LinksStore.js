@@ -110,5 +110,6 @@ export const HowToJoinRouter = {
     DONATE: "/rmhs/donate",
     BECOME_PARTNER: "/rmhs/join/become-partner",
     SHOP: "/rmhs/join/shop",
-    PAJAMAS_DAY: "/rmhs/join/pajamas-day"
+    PAJAMAS_DAY: "/rmhs/join/pajamas-day",
+    STICKERS: "/rmhs/join/stickers"
 }
