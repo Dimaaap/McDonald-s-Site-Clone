@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { Heart, Search } from 'lucide-react'
 import { AboutCategoryModal, FamilyRoomsModal, HowToBeInsideModal, OurThingsModal } from '../modals';
-import { useFamilyRoomsModal } from '@/store';
+import { RMHCAboutRouter, useFamilyRoomsModal } from '@/store';
 
 export const RMHSMainHeader = () => {
 
@@ -96,12 +96,12 @@ export const RMHSMainHeader = () => {
 
       <Link className="font-bold text-[1.1rem] hover:text-blue-400 
       hover:border-b-2 hover:border-blue-400 cursor-pointer"
-      href="/news" onMouseEnter={() => hideAllModals()}>
+      href={ RMHCAboutRouter.NEWS } onMouseEnter={() => hideAllModals()}>
         Новини
       </Link>
       <Link className="font-bold text-[1.1rem] hover:text-blue-400 
       hover:border-b-2 hover:border-blue-400 cursor-pointer"
-      href="/contacts" onMouseEnter={() => hideAllModals()}>
+      href={ RMHCAboutRouter.CONTACTS } onMouseEnter={() => hideAllModals()}>
         Контакти
       </Link>
       <Link href="/#" className="hover:text-blue-400 

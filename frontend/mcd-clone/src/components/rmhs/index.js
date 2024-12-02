@@ -25,3 +25,5 @@ export { DonateMainSection } from "./DonateMainSection";
 export { BecomePartnerMainSection } from "./BecomePartnerMainSection";
 export { StickersMainSection } from "./StickersMainSection"
 export { PajamasMainSection } from "./PajamasMainSection";
+export { ContactsMainSection } from "./ContactsMainSection";
+export { NewsMainSection } from "./NewsMainSection";

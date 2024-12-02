@@ -82,6 +82,8 @@ export const NewsRoomRouter = {
 
 export const RMHCAboutRouter = {
     ABOUT: "/rmhs/about",
+    CONTACTS: "/rmhs/contacts",
+    NEWS: "/rmhs/news",
     YEARS_50: "/rmhs/50-years",
     REPORTS: "/rmhs/reports",
     TEAM: "/rmhs/about/team",
@@ -109,7 +111,16 @@ export const FamilyRoomsRouter = {
 export const HowToJoinRouter = {
     DONATE: "/rmhs/donate",
     BECOME_PARTNER: "/rmhs/join/become-partner",
-    SHOP: "/rmhs/join/shop",
+    SHOP: "/shop",
     PAJAMAS_DAY: "/rmhs/join/pajamas-day",
     STICKERS: "/rmhs/join/stickers"
+}
+
+export const ShopSectionLinks = {
+    ABOUT_SECTION: "#about",
+    CHOOSE_ITEMS_SECTION: "#choose-items",
+    PRODUCTS_SECTION: "#products",
+    REVIEWS_SECTION: "#reviews",
+    CONTACTS_SECTION: "#contacts",
+    HELP_ONLINE: "/shop/help-online"
 }

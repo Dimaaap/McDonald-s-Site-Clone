@@ -4,7 +4,7 @@ export { BannerRoutes, AdvertismentRoute,
     ToKnowStore, FAQStore, ImpactStrategyRoute, 
     QualityAndHygieneRoute, VacanciesRouter, NewsRoomRouter, 
     RMHCAboutRouter, FoundationThingsRouter, FamilyRoomsRouter,
-    HowToJoinRouter
+    HowToJoinRouter, ShopSectionLinks
 } from "./LinksStore";
 export { menuItems } from './menuItems';
 export { useBannerHandler, 
