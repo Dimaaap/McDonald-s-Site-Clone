@@ -30,3 +30,4 @@ export { OurAchievements } from "./OurAchievements";
 export { WhatFamilySayCart } from "./WhatFamilySayCart";
 export { PersonalCard } from "./PersonalCard";
 export { AnimationTriangles } from "./AnimationTriangles"
+export { ServiceCard } from "./ServiceCard";

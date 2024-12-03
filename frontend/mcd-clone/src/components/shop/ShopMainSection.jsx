@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { AnimationTriangles } from '../shared'
-import { PresentsSection } from '.'
+import { PresentsSection, TimeForFamilies, WhyImportantSection, Advantages } from '.'
 
 export const ShopMainSection = () => {
     const [ isMoreText, setIsMoreText ] = useState(false)
@@ -65,6 +65,9 @@ export const ShopMainSection = () => {
             bg-center bg-cover bg-no-repeat`} />
         </div>
         <PresentsSection />
+        <TimeForFamilies />
+        <WhyImportantSection />
+        <Advantages />
     </div>
   )
 }
