@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react'
 import { AnimationTriangles } from '../shared'
-import { PresentsSection, TimeForFamilies, WhyImportantSection, Advantages } from '.'
+import { PresentsSection, TimeForFamilies, WhyImportantSection, 
+    Advantages, FamilyRoomsInUkr, Partners, Feedbacks, WishForm } from '.'
 
 export const ShopMainSection = () => {
     const [ isMoreText, setIsMoreText ] = useState(false)
@@ -68,6 +69,10 @@ export const ShopMainSection = () => {
         <TimeForFamilies />
         <WhyImportantSection />
         <Advantages />
+        <FamilyRoomsInUkr />
+        <Partners />
+        <Feedbacks />
+        <WishForm />
     </div>
   )
 }

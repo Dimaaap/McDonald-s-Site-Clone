@@ -6,7 +6,7 @@ import { AnimationTriangles } from '../shared'
 export const WhyImportantSection = () => {
   return (
      <div className="p-[5%] bg-gray-100 
-     -mt-[5%] relative overflow-hidden">
+     -mt-[5%] relative overflow-hidden" id="about">
         <Image src="https://shop.rmhc.org.ua/wp-content/uploads/2020/04/photo-screen-4-2.png"
         alt="" width={400} height={400} className="absolute" />
         <div className="flex flex-row gap-7">

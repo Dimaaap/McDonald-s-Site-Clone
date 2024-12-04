@@ -22,7 +22,7 @@ export const TimeForFamilies = () => {
     }, [])
 
   return (
-    <div className="p-[5%] bg-gray-100 flex flex-col gap-7 -mt-[5%]">
+    <div className="p-[5%] bg-gray-100 flex flex-col gap-7 -mt-[5%]" id="products">
       <h1 className="text-4xl font-extrabold text-center">
         Подаруйте безцінний час родинам
       </h1>

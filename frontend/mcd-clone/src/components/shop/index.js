@@ -5,3 +5,9 @@ export { PresentsSection } from './PresentsSection'
 export { TimeForFamilies } from './TimeForFamilies';
 export { WhyImportantSection } from './WhyImportantSection';
 export { Advantages } from "./Advantages";
+export { FamilyRoomsInUkr } from "./FamilyRoomsInUkr";
+export { Partners } from "./Partners";
+export { Feedbacks } from "./Feedbacks";
+export { WishForm } from "./WishForm";
+export { HelpMainSection } from "./HelpMainSection";
+export { OneProductSection } from "./OneProductSection";

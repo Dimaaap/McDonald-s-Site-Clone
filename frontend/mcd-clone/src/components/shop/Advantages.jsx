@@ -5,28 +5,26 @@ export const Advantages = () => {
   return (
     <div className="p-[5%] bg-gray-100 
     -mt-[5%] relative overflow-hidden">
-        <div className="flex flex-row gap-[15%] mx-auto items-center">
-            <div className="relative flex flex-col gap-10 w-1/2 pl-[15%] pt-[5%]">
+        <div className="flex flex-row gap-[15%] mx-auto items-center px-[15%]">
+            <div className="w-1/2 flex flex-col gap-5 mt-[5%] items-center">
                 <Image src="https://shop.rmhc.org.ua/wp-content/themes/shop-rmhc/img/bgs/bg-numbers-small.svg" 
-                alt="" width={200} height={200} />
-                <h1 className="text-center text-4xl font-extrabold text-white absolute 
-                top-[40%] left-[50%]">
+                alt="" width={200} height={200} className='relative'/>
+                <h1 className='text-6xl font-extrabold text-white absolute
+                bottom-[50%] right-[67%]'>
                     5
                 </h1>
-                <h1 className="text-center text-2xl font-extrabold 
-                max-w-[90%] -ml-[15%] -mt-[10%]">
+                <h1 className='text-2xl font-extrabold text-center w-[80%]'>
                     Сімейних Кімнат вже відкрито в Україні
                 </h1>
             </div>
-            <div className="relative flex flex-col gap-10 w-1/2 pl-[15%] pt-[5%]">
+            <div className="w-1/2 flex flex-col gap-5 mt-[5%] items-center">
                 <Image src="https://shop.rmhc.org.ua/wp-content/themes/shop-rmhc/img/bgs/bg-numbers-big.svg" 
-                alt="" width={250} height={250} />
-                <h1 className="text-center text-4xl font-extrabold text-white absolute 
-                top-[40%] left-[50%]">
+                alt="" width={350} height={350} className='relative'/>
+                <h1 className='text-6xl font-extrabold text-white absolute
+                bottom-[48%] right-[23%]'>
                     35 833
                 </h1>
-                <h1 className="text-center text-2xl font-extrabold 
-                max-w-[80%] -ml-[15%] -mt-[10%]">
+                <h1 className='text-2xl font-extrabold text-center w-[80%]'>
                     гостей відвідали Сімейні Кімнати
                 </h1>
             </div>
