@@ -5,3 +5,4 @@ export { OurThingsModal } from "./OurThingsModal";
 export { FamilyRoomsModal } from "./FamilyRoomsModal";
 export { HowToBeInsideModal } from "./HowToBeInsideModal";
 export { FullSliderImageModal } from "./FullSliderImageModal";
+export { ShopImageModal } from "./ShopImageModal";

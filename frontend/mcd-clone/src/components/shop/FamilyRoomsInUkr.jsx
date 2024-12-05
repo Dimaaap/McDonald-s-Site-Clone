@@ -2,36 +2,16 @@
 
 import Image from 'next/image'
 import React, { useRef, useState } from 'react'
-import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useOpenShopModal, familyRooms, useRoomScroll } from '@/store';
+import { ShopImageModal } from '../modals';
 
-const familyRooms = [
-    {
-        src: "https://shop.rmhc.org.ua/wp-content/uploads/2020/04/sumy1-1.png",
-        title: "Сумська обласна дитяча клінічна лікарня"
-    },
-    {
-        src: "https://shop.rmhc.org.ua/wp-content/uploads/2020/04/kiev-1.png",
-        title: "Національна дитяча спеціалізована лікарня 'Охматдит' у Києві"
-    },
-    {
-        src: "https://shop.rmhc.org.ua/wp-content/uploads/2020/04/lviv-1.png",
-        title: "Львівська обласна дитяча клінічна лікарня 'Охматдит'"
-    },
-    {
-        src: "https://shop.rmhc.org.ua/wp-content/uploads/2020/04/vinnitska.png",
-        title: "Вінницька обласна дитяча клінічна лікарня"
-    },
-    {
-        src: "https://shop.rmhc.org.ua/wp-content/uploads/2020/04/kharkiv.png",
-        title: "Харківська обласна дитяча клінічна лікарня"
-    }
-]
 
 export const FamilyRoomsInUkr = () => {
 
     const carouselRef = useRef(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [ currentIndex, setCurrentIndex ] = useState(0)
+    const { isModalOpen, setIsModalOpen } = useOpenShopModal()
 
     const handleNext = () => {
         if (carouselRef.current && currentIndex < 4){
@@ -64,30 +44,34 @@ export const FamilyRoomsInUkr = () => {
 
   return (
     <div className="w-full bg-blue-600/80 px-1 pt-[4%] flex flex-col gap-10">
+        { isModalOpen && (
+            <ShopImageModal />
+        ) }
       <div className="w-full text-center text-4xl font-extrabold text-white">
         <h1>Сімейні Кімнати в Україні</h1>
       </div>
       <div className='relative w-[100%] justify-center px-10'>
         <ChevronLeft size={50} className={`text-white hover:text-yellow-400 
-        absolute -left-1 top-[25%] cursor-pointer 
+        absolute -left-1 top-[35%] cursor-pointer 
         ${currentIndex === 0 && "opacity-50 cursor-not-allowed"}`} 
         onClick={ handlePrev }/>
 
         <div className="flex gap-12 overflow-hidden" ref={carouselRef}>
             { familyRooms.map((item, index) => (
-                <Link key={index} href="#" 
+                <div key={index} 
                 className="flex flex-col gap-7 w-[48%] shrink-0 
-                cursor-pointer text-center">
+                cursor-pointer text-center"
+                onClick={() => setIsModalOpen(true)}>
                     <Image src={ item.src } alt={ item.title } 
                     width={500} height={500} className="w-full" />
                     <h1 className="font-extrabold text-yellow-500 text-xl">
                         { item.title }
                     </h1>
-                </Link>
+                </div>
             )) }
         </div>
         <ChevronRight size={50} className={`text-white hover:text-yellow-400 
-        absolute -right-1 top-[25%] cursor-pointer 
+        absolute -right-1 top-[35%] cursor-pointer 
         ${currentIndex === 3 && "opacity-50 cursor-not-allowed"}`} 
         onClick={ handleNext }/>
       </div>

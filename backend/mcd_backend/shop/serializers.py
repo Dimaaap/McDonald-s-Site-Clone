@@ -9,3 +9,11 @@ class AllProductsSerializer(serializers.ModelSerializer):
         model = ProductsModel
         fields = "__all__"
         read_only_fields = ["id", "image"]
+
+
+class UniqueProductSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = ProductsModel
+        fields = "__all__"
+        read_only_fields = ["id", "image"]
