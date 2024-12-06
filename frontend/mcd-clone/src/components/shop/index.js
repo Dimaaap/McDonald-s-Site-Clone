@@ -11,3 +11,4 @@ export { Feedbacks } from "./Feedbacks";
 export { WishForm } from "./WishForm";
 export { HelpMainSection } from "./HelpMainSection";
 export { OneProductSection } from "./OneProductSection";
+export { AllImagesContainer } from "./AllImagesContainer"

@@ -1961,3 +1961,64 @@ class DataStorage:
             "city": "Яремче"
         }
     ]
+
+    HAPPY_MEAL_COLLECTIONS = [
+        "Mario"
+    ]
+
+    HAPPY_MEAL_TOYS = [
+        {
+            "title": "Маріо",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/01_Mario_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+        {
+            "title": "Золотий Маріо",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/04_Gold%20Mario_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+        {
+            "title": "Боузер",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/03_Bowser_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+        {
+            "title": "Піч",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/05_Peach_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+        {
+            "title": "Рожево-золота Піч",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/07_Rose%20Gold%20Peach_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+        {
+            "title": "Луїджі",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/06_Luigi_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+        {
+            "title": "Тоад",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/08_Toad_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+        {
+            "title": "Тоадет",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/09_Toadette_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+        {
+            "title": "Йоші",
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/10_Yoshi_TOYS:3-column-desktop?resmode=sharp2",
+            "is_active": True,
+            "collection": "Mario"
+        },
+    ]

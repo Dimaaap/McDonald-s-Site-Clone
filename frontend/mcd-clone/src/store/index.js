@@ -26,3 +26,5 @@ export { useOpenShopModal } from "./useOpenShopModal";
 export { useImageZoom } from "./useImageZoom";
 export { familyRooms } from "./familyRooms"
 export { useRoomScroll } from "./useRoomScroll";
+export { useModalChangeImage } from "./useModalChangeImage";
+export { useAllImages } from "./useAllImages"

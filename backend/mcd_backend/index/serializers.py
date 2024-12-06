@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import MenuCategory, Product, City
+from .models import MenuCategory, Product, City, HappyMealToys
 
 
 class MenuCategorySerializer(serializers.ModelSerializer):
@@ -14,6 +14,14 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
+        fields = ["id", "title", "image"]
+        read_only_fields = fields
+
+
+class HappyMealToysSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = HappyMealToys
         fields = ["id", "title", "image"]
         read_only_fields = fields
 

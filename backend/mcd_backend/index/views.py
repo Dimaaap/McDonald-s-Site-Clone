@@ -5,11 +5,11 @@ from rest_framework.permissions import AllowAny
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Q
 
-from .models import MenuCategory, Product, City
+from .models import MenuCategory, Product, City, HappyMealToys
 from .serializers import (MenuCategorySerializer,
                           ProductSerializer,
                           UniqueProductSerializer,
-                          CitiesSerializer)
+                          CitiesSerializer, HappyMealToysSerializer)
 
 
 class MenuCategoryViewSet(viewsets.ModelViewSet):
@@ -23,6 +23,11 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class =  ProductSerializer
     permission_classes = [AllowAny]
 
+
+class HappyMealToysViewSet(viewsets.ModelViewSet):
+    queryset = HappyMealToys.objects.filter(is_active=True)
+    serializer_class = HappyMealToysSerializer
+    permission_classes = [AllowAny]
 
 class AllCitiesWithDelivery(viewsets.ModelViewSet):
     queryset = City.objects.filter(Q(has_glovo_delivery=True) | Q(has_bolt_delivery=True))

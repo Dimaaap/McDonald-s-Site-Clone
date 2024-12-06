@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import React, { useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { useOpenShopModal, familyRooms, useRoomScroll } from '@/store';
+import { useOpenShopModal, familyRooms, useModalChangeImage } from '@/store';
 import { ShopImageModal } from '../modals';
 
 
@@ -11,6 +11,7 @@ export const FamilyRoomsInUkr = () => {
 
     const carouselRef = useRef(null);
     const [ currentIndex, setCurrentIndex ] = useState(0)
+    const { setCurrentImageIndex } = useModalChangeImage();
     const { isModalOpen, setIsModalOpen } = useOpenShopModal()
 
     const handleNext = () => {
@@ -42,10 +43,15 @@ export const FamilyRoomsInUkr = () => {
         }
     }
 
+    const handleImageClick = (index) => {
+        setIsModalOpen(true);
+        setCurrentImageIndex(index);
+    }
+
   return (
     <div className="w-full bg-blue-600/80 px-1 pt-[4%] flex flex-col gap-10">
         { isModalOpen && (
-            <ShopImageModal />
+            <ShopImageModal imageIndex={ currentIndex } />
         ) }
       <div className="w-full text-center text-4xl font-extrabold text-white">
         <h1>Сімейні Кімнати в Україні</h1>
@@ -61,7 +67,7 @@ export const FamilyRoomsInUkr = () => {
                 <div key={index} 
                 className="flex flex-col gap-7 w-[48%] shrink-0 
                 cursor-pointer text-center"
-                onClick={() => setIsModalOpen(true)}>
+                onClick={() => handleImageClick(index)}>
                     <Image src={ item.src } alt={ item.title } 
                     width={500} height={500} className="w-full" />
                     <h1 className="font-extrabold text-yellow-500 text-xl">

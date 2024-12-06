@@ -187,3 +187,23 @@ class Product(models.Model):
 
     def __str__(self):
         return f'{self.title}, {self.weight}г'
+
+
+class HappyMealCollection(models.Model):
+    id = models.UUIDField(default=uuid4, primary_key=True)
+    title = models.CharField(max_length=150, default="")
+
+    def __str__(self):
+        return self.title
+
+
+class HappyMealToys(models.Model):
+    id = models.UUIDField(default=uuid4, primary_key=True)
+    title = models.CharField(max_length=100, default="")
+    image = models.URLField(default="")
+    is_active = models.BooleanField(default=False)
+
+    collection = models.ForeignKey(HappyMealCollection, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title

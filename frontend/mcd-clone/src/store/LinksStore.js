@@ -7,12 +7,12 @@ export const DashboardRoutes = {
 }
 
 export const BannerRoutes = {
-    NEW_DESSERTS: "/eat/fullmenu/desserts",
+    NOVELTY: "/eat/novelty/big_cheese_burgers",
     HAPPYMEAL: "/play/happymealbooks",
     RESTAURANTS: "/restaurants",
     MCCRISPY_DELUXE: "/eat/novelty/McCrispi_Deluxe",
     UKRAINIAN_BURGER: "/eat/ukrainian_burger",
-    MOBILE_APP: DashboardRoutes.MOBILE_APP
+    HAPPY_TOYS: "/play/happytoysmeal"
 }
 
 export const AdvertismentRoute = {
