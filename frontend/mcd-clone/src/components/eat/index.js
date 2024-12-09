@@ -4,3 +4,4 @@ export { MenuCategory } from "./MenuCategory";
 export { UniqueProduct } from "./UniqueProduct";
 export { CheeseBurgersMainSection } from "./CheeseBurgersMainSection"
 export { ToysMainSection } from "./ToysMainSection";
+export { BooksMainSection } from "./BooksMainSection";

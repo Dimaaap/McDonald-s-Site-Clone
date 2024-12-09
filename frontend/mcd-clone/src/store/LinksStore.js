@@ -12,7 +12,8 @@ export const BannerRoutes = {
     RESTAURANTS: "/restaurants",
     MCCRISPY_DELUXE: "/eat/novelty/McCrispi_Deluxe",
     UKRAINIAN_BURGER: "/eat/ukrainian_burger",
-    HAPPY_TOYS: "/play/happytoysmeal"
+    HAPPY_TOYS: "/play/happytoysmeal",
+    FULL_MENU: "/eat/fullmenu"
 }
 
 export const AdvertismentRoute = {

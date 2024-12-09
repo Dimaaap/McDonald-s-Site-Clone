@@ -1,4 +1,4 @@
-import { BannerRoutes } from "./LinksStore"
+import { BannerRoutes, DashboardRoutes, HowToJoinRouter } from "./LinksStore"
 
 export const banners = [
     {
@@ -17,7 +17,7 @@ export const banners = [
       noticeText: `Разом ми побудуємо Дім Рональда МакДональда для хворих дітей та 
       їхніх сімей на території найбільшої дитячої лікарні та надамо важливу 
       підтримку в Сімейних кімнатах.`,
-      noticeHref: BannerRoutes.HAPPYMEAL
+      noticeHref: HowToJoinRouter.STICKERS
     },
     {
       number: 3,
@@ -27,7 +27,7 @@ export const banners = [
       Ароматне Лате Імбирне печиво, свіжесенький і пряний МакПиріг® Слива-Кориця 
       або Мафін Крем-Солона карамель. Сезон теплих обіймів починається в 
       МакДональдз!`,
-      noticeHref: BannerRoutes.RESTAURANTS
+      noticeHref: BannerRoutes.FULL_MENU
     },
     {
       number: 4,
@@ -37,7 +37,7 @@ export const banners = [
       розсмішити його! Читайте й захоплюйтеся разом із дітьми історіями двох 
       мрійниць, що стали героїнями двох нових книжечок серії «Я можу» в 
       Хеппі Міл®!`,
-      noticeHref: BannerRoutes.MCCRISPY_DELUXE
+      noticeHref: ""
     },
     {
       number: 5,

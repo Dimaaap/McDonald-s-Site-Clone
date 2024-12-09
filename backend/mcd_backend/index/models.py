@@ -54,7 +54,7 @@ class Restaurant(models.Model):
     express_open_time = models.TimeField(null=True)
     express_close_time = models.TimeField(null=True)
 
-    is_open_now = models.BooleanField(default=False)
+    is_open_now = models.BooleanField(default=True) #TODO: make migration
     is_has_generator = models.BooleanField(default=True)
     is_has_mcdrive = models.BooleanField(default=True)
     is_has_bicycle_parking = models.BooleanField(default=True)

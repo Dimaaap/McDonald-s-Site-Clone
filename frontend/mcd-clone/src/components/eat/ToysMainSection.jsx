@@ -1,6 +1,7 @@
 "use client"
 
 import { getToys } from '@/fetch'
+import { BannerRoutes } from '@/store'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
@@ -80,7 +81,8 @@ export const ToysMainSection = () => {
                 час із дітьми. Наприклад, не тільки погратися із дитиною іграшками,
                 а ще й погортати дитячі книжки з Хеппі Міл®
             </p>
-            <Link href="#" className="bg-yellow-400 hover:bg-yellow-500 text-center
+            <Link href={ BannerRoutes.HAPPYMEAL } 
+            className="bg-yellow-400 hover:bg-yellow-500 text-center
             w-[30%] p-4 rounded-md absolute bottom-0">
                 Дізнатись більше
             </Link>
