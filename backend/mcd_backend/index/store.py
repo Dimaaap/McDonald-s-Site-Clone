@@ -3195,5 +3195,8 @@ class DataStorage:
             "is_has_express_window": False,
             "area": "Святошинський",
             "city": "Київ"
+        },
+        {
+
         }
     ]
