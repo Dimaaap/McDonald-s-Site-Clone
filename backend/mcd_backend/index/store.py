@@ -2360,6 +2360,23 @@ class DataStorage:
             "city": "Вінниця"
         },
         {
+            "title": "Kyivskyi",
+            "address": "вул.Київська, 3Б",
+            "number": 140,
+            "phone_number": "+380 800 501 579",
+            "main_open_time": "07:00",
+            "drive_open_time": "05:00",
+            "main_close_time": "23:00",
+            "drive_close_time": "23:30",
+            "is_has_mcdrive": True,
+            "is_has_bicycle_parking": True,
+            "is_has_generator": True,
+            "is_has_delivery": True,
+            "is_has_express_window": False,
+            "area": "Замостянський",
+            "city": "Вінниця"
+        },
+        {
             "title": "Yunist",
             "address": "вул.Келецька, 78 В",
             "number": 67,
@@ -2518,7 +2535,9 @@ class DataStorage:
             "title": "Vokzal Odesa",
             "address": "вул.Пантелеймонівська, 17Б",
             "number": 16,
-            "is_open_now": False
+            "is_open_now": False,
+            "area": "Приморський",
+            "city": "Одеса"
         },
         {
             "title": "Shevchenka",
@@ -2608,7 +2627,7 @@ class DataStorage:
         {
             "title": "Oleksandriya",
             "address": "вул. Мазепи Гетьмана, 23",
-            "number": 134,
+            "number": 141,
             "phone_number": "+380 800 501 579",
             "main_open_time": "08:00",
             "drive_open_time": "08:00",
@@ -2912,7 +2931,7 @@ class DataStorage:
         {
             "title": "Hora",
             "address": "вул.Бориспільська, 6",
-            "number": 96,
+            "number":143,
             "phone_number": "+380 800 501 579",
             "main_open_time": "08:00",
             "drive_open_time": "08:00",
@@ -2961,7 +2980,7 @@ class DataStorage:
         {
             "title": "Radosin",
             "address": "вул.Р.Рейгана,4",
-            "number": 96,
+            "number": 142,
             "phone_number": "+380 800 501 579",
             "main_open_time": "07:00",
             "drive_open_time": "05:00",
@@ -3716,5 +3735,39 @@ class DataStorage:
             "is_has_express_window": False,
             "area": "Голосіївський",
             "city": "Київ"
-        }
+        },
+        {
+            "title": "Avtovokzal",
+            "phone_number": "+380 504 634 065",
+            "address": "Деміївська площа, 1/3 А",
+            "number": 41,
+            "main_open_time": "07:00",
+            "drive_open_time": "05:00",
+            "main_close_time": "23:00",
+            "drive_close_time": "23:00",
+            "is_has_mcdrive": True,
+            "is_has_bicycle_parking": True,
+            "is_has_generator": True,
+            "is_has_delivery": True,
+            "is_has_express_window": False,
+            "area": "Голосіївський",
+            "city": "Київ"
+        },
+        {
+            "title": "Kriukivschyna",
+            "phone_number": "+380 800 501 579",
+            "address": "вул.Богуна Івана,2",
+            "number": 125,
+            "main_open_time": "07:00",
+            "drive_open_time": "07:00",
+            "main_close_time": "22:30",
+            "drive_close_time": "22:30",
+            "is_has_mcdrive": True,
+            "is_has_bicycle_parking": True,
+            "is_has_generator": False,
+            "is_has_delivery": True,
+            "is_has_express_window": False,
+            "area": "Бучанський",
+            "city": "Крюківщина"
+        },
     ]
