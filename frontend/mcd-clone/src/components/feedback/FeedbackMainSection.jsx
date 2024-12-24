@@ -26,14 +26,14 @@ export const FeedbackMainSection = () => {
           </li>
           <li>
             Відгук на сторінці {" "}
-            <LiLink linkHref="#" linkText="Mctellus" />
+            <LiLink linkHref="https://www.mctellus.com/websurvey/2/execute?_g=MTEyNDQ%3DG&_s2=77e9efc0-f79f-48c5-ac87-88907bd44054" linkText="Mctellus" />
             {" "} (за наявності чеку)
           </li>
           <li>
-            <LiLink linkHref="#" linkText="Facebook" />
+            <LiLink linkHref="https://www.facebook.com/McDonaldsUA/" linkText="Facebook" />
             {" "} або {" "}
 
-            <LiLink linkHref="#" linkText="Intagram" />
+            <LiLink linkHref="https://www.instagram.com/mcdonaldsukraine/" linkText="Intagram" />
           </li>
         </ul>
         <h1 className="font-extrabold text-2xl">

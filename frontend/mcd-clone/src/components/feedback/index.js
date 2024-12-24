@@ -1,1 +1,2 @@
-export { FeedbackMainSection } from "./FeedbackMainSection"
+export { FeedbackMainSection } from "./FeedbackMainSection";
+export { FeedbackFormContainer } from "./FeedbackFormContainer";
