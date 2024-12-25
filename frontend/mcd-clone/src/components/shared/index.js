@@ -31,3 +31,4 @@ export { WhatFamilySayCart } from "./WhatFamilySayCart";
 export { PersonalCard } from "./PersonalCard";
 export { AnimationTriangles } from "./AnimationTriangles"
 export { ServiceCard } from "./ServiceCard";
+export { RequiredStar } from "./RequiredStar";
